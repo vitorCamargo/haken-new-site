@@ -1,0 +1,145 @@
+body{
+	background-image: url('/imagens/fundo.png');
+	background-attachment: fixed;
+	height: 100%;
+}
+
+header {
+	background-image: url('/imagens/header.png');
+	background-size: cover;
+	background-position: 30% 30%;
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'GeosansLight';
+	font-style: normal;
+	font-weight: normal;
+	src: local('GeosansLight'), url('GeosansLight.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'GeosansLight-Oblique';
+	font-style: normal;
+	font-weight: normal;
+	src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('woff');
+}
+
+.font-logo {
+	font-family: 'GeosansLight';
+}
+
+.font-logo-brand {
+	font-family: 'GeosansLight';
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.font-logo-h2 {
+	font-family: 'GeosansLight';
+	font-size: 65px;
+	/* font-weight: bold; */
+}
+
+.font-logo-item{
+	font-family: 'GeosansLight';
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.my-navbar{
+	background-color: #07183e;
+}
+
+.margin-topbar-right{
+	margin-right: 60px;
+}
+
+.header{
+	margin-top: 65px;
+	padding: 20%;
+}
+
+.sm-margin-v{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.md-margin-v{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.lg-margin-v{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.sm-margin-h{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.md-margin-h{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.lg-margin-h{
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.margin-h{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my-header{
+	margin-bottom: 70px;
+}
+
+.my-jumbotron{
+	/* background-color: rgba(4, 13, 32, 0.75); */
+	background-color: rgba(6, 13, 27, 0.68);
+}
+
+.my-icon{
+    height: 43%;
+    width: 35%;
+}
+
+.footer{
+	background-color: #07183e;
+	margin-bottom: -1px;
+}
+
+.img-logo {
+	height: 20%;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+  /* width: 768px; */
+  height: 700px;
+  margin-bottom: 20px;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#contato a {
+	color: black;
+	font-weight: 300; 
+}
+
+#contato a:hover {
+	text-decoration: none;
+}

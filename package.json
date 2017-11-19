@@ -1,0 +1,23 @@
+{
+  "name": "sitehaken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorFaustino/siteHaken.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorFaustino/siteHaken/issues"
+  },
+  "homepage": "https://github.com/igorFaustino/siteHaken#readme"
+}
