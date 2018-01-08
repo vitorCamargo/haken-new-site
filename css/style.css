@@ -1,21 +1,9 @@
-body{
-	background-image: url('/imagens/fundo.png');
-	background-attachment: fixed;
-	height: 100%;
-}
-
-header {
-	background-image: url('/imagens/header.png');
-	background-size: cover;
-	background-position: 30% 30%;
-	height: 100%;
-}
-
+/* Fontes */
 @font-face {
 	font-family: 'GeosansLight';
 	font-style: normal;
 	font-weight: normal;
-	src: local('GeosansLight'), url('GeosansLight.woff') format('woff');
+	src: local('GeosansLight'), url('/fonts/GeosansLight.woff') format('woff');
 }
 
 
@@ -23,7 +11,20 @@ header {
 	font-family: 'GeosansLight-Oblique';
 	font-style: normal;
 	font-weight: normal;
-	src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('woff');
+	src: local('GeosansLight-Oblique'), url('/fonts/GeosansLight-Oblique.woff') format('woff');
+}
+
+/* GERAL */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url('/imagens/fundo.png');
+	background-attachment: fixed;
+	height: 100%;
 }
 
 .font-logo {
@@ -48,17 +49,21 @@ header {
 	font-weight: bold;
 }
 
+header {
+	background-image: url('/imagens/header1.jpg');
+	background-size: cover;
+	background-position: 30% 30%;
+	height: 80%;
+}
+
+
 .my-navbar{
 	background-color: #07183e;
+	box-shadow: -1px 3px 3px #020e29;
 }
 
 .margin-topbar-right{
 	margin-right: 60px;
-}
-
-.header{
-	margin-top: 65px;
-	padding: 20%;
 }
 
 .sm-margin-v{
@@ -96,44 +101,416 @@ header {
 	margin-right: auto;
 }
 
+.margin-v{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.my-icon{
+	height: 43%;
+	width: 35%;
+}
+
+
+/* HEADER */
+.img-logo {
+	height: 20%;
+}
+
+.header{
+	margin-top: 65px;
+}
+
+.header-conteudo{
+	position: absolute;
+	background-color: #0000009a;
+	border-radius: 10px;
+	padding: 25px;
+	color: white;
+}
+
+.header-text{
+	font-family: 'GeosansLight';
+	font-size: 60px;
+	font-weight: 300;
+	/* font-style: normal;
+	font-stretch: normal; */
+	line-height: 0.57;
+	letter-spacing: 1.2px;
+	text-align: center;
+	color: #c8c8c8;
+	margin-left: 0;
+	margin-top: 3px;
+}
+
+.header-logo{
+	margin-right: -80px;
+}
+
+.header-text-responsive{
+	width: 700px;
+}
+.position-header-conteudo{
+	position: absolute;
+	top: 15%;
+	left: 40%;
+}
+
 .my-header{
 	margin-bottom: 70px;
 }
 
+.my-nav-link{
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+.btn-header{
+	opacity: 0.4;
+	border-radius: 10px;
+	background-color: #c5c2c2;
+	background-color: var(--white);
+	border: solid 3.8px #ffffff;
+	border: solid 3.8px var(--white);
+	font-size: 30px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.13;
+	letter-spacing: 0.6px;
+	text-align: justify;
+	color: #070230;
+	box-shadow: 5px 5px 5px black;
+}
+
+#btn-header{
+	text-align: right;
+}
+
+/* Header Responsivo */
+
+@media only screen and (max-width: 1439px) {
+	.header-text-responsive{
+		width: 700px;
+	}
+	.position-header-conteudo{
+		position: absolute;
+		top: 15%;
+		left: 40%;
+	}
+
+	.header-logo{
+		margin-right: -80px;
+		height: 100px;
+	}
+
+	#btn-header{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.header-text-responsive{
+		width: 500px;
+	}
+	.position-header-conteudo{
+		position: absolute;
+		top: 15%;
+		left: 40%;
+	}
+
+	.header-logo{
+		margin-right: -70px;
+		height: 100px;
+	}
+
+	#btn-header{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.header-text-responsive{
+		width: 450px;
+	}
+	.position-header-conteudo{
+		position: absolute;
+		top: 15%;
+		left: 35%;
+	}
+
+	.header-logo{
+		margin-right: -70px;
+		height: 100px;
+	}
+
+	#btn-header{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header-text-responsive{
+		width: 400px;
+		font-size: 50px;
+	}
+	.position-header-conteudo{
+		position: absolute;
+		top: 15%;
+		left: 30%;
+	}
+
+	.header-logo{
+		margin-right: -100px;
+	}
+
+	#btn-header{
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.header-text-responsive{
+		width: 350px;
+		font-size: 37px;
+	}
+	
+	.position-header-conteudo{
+		position: absolute;
+		top: 15%;
+		left: 30%;
+	}
+
+	.header-logo{
+		margin-right: -80px;
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.header-text-responsive{
+		width: 300px;
+		font-size: 37px;
+	}
+	
+	.position-header-conteudo{
+		position: absolute;
+		top: 25%;
+		left: 17%;
+	}
+
+	#btn-header{
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	header {
+		background-position: 70% 10%;
+	}
+	
+}
+
+@media only screen and (max-width: 424px) {
+	.header-text-responsive{
+		width: 300px;
+		font-size: 50px;
+	}
+	
+	.position-header-conteudo{
+		position: absolute;
+		top: 25%;
+		left: 10%;
+	}
+
+	.header-logo{
+		margin-right: -60px;
+		height: 100px;
+	}
+
+	#btn-header{
+		margin-top: 120px;
+	}
+
+	header {
+		background-position: 65% 1%;
+	}
+}
+
+@media only screen and (max-width: 374px) {
+	.header-text-responsive{
+		width: 270px;
+		font-size: 50px;
+	}
+	
+	.position-header-conteudo{
+		position: absolute;
+		top: 28%;
+		left: 10%;
+	}
+
+	.header-logo{
+		margin-right: -60px;
+		height: 100px;
+	}
+
+	#btn-header{
+		margin-top: 120px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.header-text-responsive{
+		width: 270px;
+		font-size: 30px;
+	}
+	
+	.position-header-conteudo{
+		position: absolute;
+		top: 30%;
+		left: 10%;
+	}
+
+	.header-logo{
+		margin-right: -80px;
+		height: 100px;
+	}
+
+	#btn-header{
+		margin-top: 120px;
+	}
+}
+
+/* SOBRE NOS */
+.margin-conteudo{
+	margin: 50px; 
+}
+
+@media only screen and (max-width: 500px) {
+	.margin-conteudo{
+		margin: auto;
+	}	
+}
+
+/* PORTIFOLIO */
 .my-jumbotron{
 	/* background-color: rgba(4, 13, 32, 0.75); */
 	background-color: rgba(6, 13, 27, 0.68);
+	border-radius: 0px;
 }
 
-.my-icon{
-    height: 43%;
-    width: 35%;
+.img-portifolio{
+	box-shadow: 5px 5px 7px #020e29;
+	max-width: 374px;
 }
 
-.footer{
+.relative {
+	position: relative;
+}
+
+.legenda {
 	background-color: #07183e;
-	margin-bottom: -1px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	min-height: 53px;
 }
 
-.img-logo {
-	height: 20%;
+.margin-imagens{
+	margin: auto
+}
+
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #07183edc;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.img-portifolio:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	padding: 10px;
+	color: white;
+	/* font-size: 14px; */
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	text-align: justify;
+}
+
+@media only screen and (max-width: 500px) {
+	.margin-conteudo{
+		margin: auto;
+	}	
+}
+
+@media only screen and (max-width: 320px) {
+	.text {
+		padding: 3px;
+		color: white;
+		font-size: 14px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		width: 100%;
+		max-height: 100%;
+		max-width: 100%;
+		text-align: justify;
+	}
+}
+
+/* CONTATOS */
+.zoom-in {
+	-webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+
+.zoom-in:hover {
+	-webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
 }
 
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 #map {
-  /* width: 768px; */
-  height: 700px;
-  margin-bottom: 20px;
+	/* width: 768px; */
+	height: 700px;
+	margin-bottom: 20px;
 }
 
 
-/* Optional: Makes the sample page fill the window. */
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
 
 #contato a {
 	color: black;
@@ -142,4 +519,12 @@ html, body {
 
 #contato a:hover {
 	text-decoration: none;
+}
+
+
+/* FOOTER */
+.footer{
+	background-color: #07183e;
+	margin-bottom: -1px;
+	border-radius: 0px;
 }

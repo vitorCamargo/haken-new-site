@@ -1,31 +1,54 @@
-function initMap() {
-	var map;
-    var lat = -24.060424; //Set your latitude.
-    var lon = -52.386508; //Set your longitude.
+var map;
+var infowindow
+var marker
+var drop
 
-    var centerLon = lon;
+function initMap() {
+    var latlng = new google.maps.LatLng(-24.060424, -52.386508);
+    var lat = -24.060424;
+    var lgn = -52.386508;
 
     var mapOptions = {
-      scrollwheel: false,
+        scrollwheel: false,
         draggable: true,
         // disableDefaultUI: true,
         zoom: 15,
-        center: new google.maps.LatLng('-24.060424', '-52.386508'),
+        center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    map = new google.maps.Map(document.getElementById('map'),  mapOptions);
+    
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-    var contentString = 'Estamos aqui!';
-	
-    var marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
+        position: latlng,
         map: map,
-        position: new google.maps.LatLng(lat, lon),
+        title: 'Estamos aqui!',
     });
+
+    var contentString = '<div>' +
+        '<h3 class="font-logo">haken</h3>' +
+        '<p>Estamos localizados na Universidade Tecnológica Federal do Paraná, Campo Mourão</p>' +
+        '</div>';
+
+    infowindow = new google.maps.InfoWindow({
+        content: contentString,
+    });
+
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+    drop = false
 }
 
 // Resize map to show on a Bootstrap's modal
-// $('#mapModal').on('shown.bs.modal', function () {
-// 	var currentCenter = new google.maps.LatLng('-24.060424', '-52.386508');  // Get current center before resizing
-// 	google.maps.event.trigger(map, "resize");
-// 	map.setCenter(currentCenter); // Re-set previous center
-// });
+$('#mapModal').on('shown.bs.modal', function () {
+    lastCenter = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(lastCenter);
+    if (!drop) {
+        marker.setAnimation(google.maps.Animation.DROP);
+        drop = true;
+    }
+    infowindow.open(map, marker);
+});

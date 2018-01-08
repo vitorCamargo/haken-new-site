@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "jquery.localscroll": "^2.0.0",
+    "jquery.scrollto": "^2.1.2"
   },
   "devDependencies": {},
   "scripts": {
