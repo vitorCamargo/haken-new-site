@@ -27,6 +27,13 @@ body{
 	height: 100%;
 }
 
+header {
+	background-image: url('/imagens/header.jpg');
+	background-size: cover;
+	background-position: 30% 30%;
+	height: 80%;
+}
+
 .font-logo {
 	font-family: 'GeosansLight';
 }
@@ -49,12 +56,6 @@ body{
 	font-weight: bold;
 }
 
-header {
-	background-image: url('/imagens/header.jpg');
-	background-size: cover;
-	background-position: 30% 30%;
-	height: 80%;
-}
 
 
 .my-navbar{
@@ -458,6 +459,7 @@ header {
 	text-align: justify;
 }
 
+
 @media only screen and (max-width: 500px) {
 	.margin-conteudo{
 		margin: auto;
@@ -521,6 +523,14 @@ header {
 	text-decoration: none;
 }
 
+.my-btn {
+	background-color: #07183e;
+	border: black;
+}
+
+.my-btn:hover {
+	background-color: #14357c;
+}
 
 /* FOOTER */
 .footer{
