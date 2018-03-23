@@ -1,329 +1,165 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang = "pt-BR">
 
-<head>
-	<title>Haken</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<title> Haken </title>
 
-	<link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+		<link rel = "shortcut icon" type = "image/x-icon" href = "imagens/favicon.ico">
 
-<body>
+		<link rel = "stylesheet" href = "css/fonts.css">
 
-	<!-- ################################## Header ##################################### -->
-	<header id="home" class="font-logo my-header relative">
+		<link rel = "stylesheet" href = "css/style.css">
+	</head>
 
-		<!-- ################################## Navbar ##################################### -->
-		<nav class="navbar navbar-expand-lg navbar-dark my-navbar fixed-top">
-			<a class="navbar-brand font-logo-brand" href="#top">haken</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-			 aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	<body>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto"></ul>
-				<div class="margin-topbar-right my-2 my-lg-0 font-logo-item">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link nav-a" href="#sobreNos">
-								<span class="my-nav-link">Sobre Nós</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link nav-a" href="#portifolio">
-								<span class="my-nav-link">Portifólio</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link nav-a" href="#contato">
-								<span class="my-nav-link">Contato</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+		<!-- ################################## Header & Menu ##################################### -->
+		<div class = "barra-sup">
+			<p class = "barra-sup-texto">
+				HAKEN - EMPRESA JÚNIOR DE CIÊNCIA DA COMPUTAÇÃO
+			</p>
+		</div>
+
+		<div class = "menu">
+			<a class = "item-menu" href = "#sobreNos" target = "_self"> SOBRE NÓS </a>
+			<a class = "item-menu" href = "#portfolio" target = "_self"> PORTFÓLIO </a>
+			<a class = "item-menu" href = "#contato" target = "_self"> CONTATO </a>
+			<a class = "item-menu item-selecionado" href = "#home" target = "_self"> HAKEN </a>
+		</div>
+
+		<!-- ################################## HOME ##################################### -->
+		<div id = "home" class = "frame home">
+			<div class = "logo">
+				<a class = "logo-text" href = "#home" target = "_self">
+					<img src = "imagens/logo/logo-black.png">
+				</a>
 			</div>
-		</nav>
-
-
-		<!-- ################################## Conteudo header ##################################### -->
-		<div class="header">
-			<div class="position-header-conteudo header-bg">
-				<div class="row">
-					<div class="col-xs-4 header-logo">
-						<img src="imagens/Logo/logo-white.png" alt="Logo da Empresa Haken" class="img-fluid">
-					</div>
-					<div class="col-xs-8 margin-v header-text">
-						<h2 class="header-text header-text-responsive">Impulsione-se para o sucesso</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 margin-v" id="btn-header">
-						<a href="#contato" class="btn btn-secondary btn-lg btn-header">Trabalhe conosco!</a>
-					</div>
-				</div>
+			<div class = "slogan">
+				<p class = "tag-text"> &lt;p&gt; </p>
+				<p class = "logo-text"> Impulsione-se para o sucesso </p>
+				<p class = "tag-text"> &lt;/p&gt; </p>
 			</div>
 		</div>
-	</header>
 
-
-	<!-- ################################## Hakenej ##################################### -->
-	<div id="hakenej">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="container">
-						<img src="imagens/Logo/Logo_haken.png" alt="Logo da Empresa Haken" class="img-fluid">
-					</div>
-				</div>
-				<div class="col-md-6 text-justify margin-v">
-					<div class="container">
-						<p>de Ciência da Computação da UTFPR- Campo Mourão, somos uma empresa voltada para a área tecnológica, em específico ao
-							desenvolvimento de softwares. Desenvolvemos uma vasta gama de sistemas, de sites a aplicativos mobile, e estamos sempre
-							em busca tecnologias inovadoras. Focamos em inovação, afinal ideias novas requerem tecnologias também novas e potentes.
-							Sua ideia pode contar com nossos códigos!</p>
-					</div>
-				</div>
+		<!-- ################################## SOBRE NÓS ##################################### -->
+		<div id = "sobreNos" class = "sobreNos">
+			<img src = "imagens/logo/logo_haken.png" alt = "Logo da Empresa Haken">
+			<div class = "descricao">
+				<p class = "tag-text"> &lt;p&gt; </p>
+				<p class = "descricao-text">
+					Nós, a Haken Empresa Júnior de Ciência da Computação da UTFPR- Campo Mourão, somos uma empresa voltada
+					para a área tecnológica, em específico ao desenvolvimento de softwares. Desenvolvemos uma vasta gama de
+					sistemas, de sites a aplicativos mobile, e estamos sempre em busca tecnologias inovadoras. Focamos em
+					inovação, afinal ideias novas requerem tecnologias também novas e potentes. Sua ideia pode contar com
+					nossos códigos!
+				</p>
+				<p class = "tag-text"> &lt;/p&gt; </p>
 			</div>
 		</div>
-	</div>
-
-	<div class="container md-margin-v">
-		<hr>
-	</div>
-
-
-	<!-- ################################## Sobre Nos ##################################### -->
-	<div class="margin-conteudo" id="sobreNos">
-		<div class="container text-center">
-			<br>
-			<h2 class="md-margin-v font-logo-h2">Sobre Nós</h2>
-
-			<div class="row text-center">
-				<div class="col-md-4 col-sm-12">
-					<div class="container-fluid">
-						<img class="img-fluid my-icon" src="/imagens/icones/icon_person.png" alt="">
-					</div>
-					<h3 class="sm-margin-v">Empresa</h3>
-					<p class="text-justify container">
-						Somos uma empresa formada e gerida por alunos do Bacharelado em Ciência da Computação, da Universidade Tecnológica Federal
-						do Paraná, campus de Campo Mourão. Visamos acima de tudo o crescimento profissional de nossos membros e qualidade nos
-						projetos realizados.
+		
+		<div class = "sobreNos">
+			<div class = "quadros">
+				<div class = "sobreNos-quadro">
+					<img src = "imagens/icones/icon_person.png">
+					<h1> Empresa </h1>
+					<p> 
+						Somos uma empresa formada e gerida por alunos do Bacharelado em Ciência da Computação, da Universidade Tecnológica 
+						Federal do Paraná, campus de Campo Mourão. Visamos acima de tudo o crescimento profissional de nossos membros e qualidade 
+						nos projetos realizados.
 					</p>
 				</div>
-				<div class="col-md-4 col-sm-12">
-					<div class="container-fluid">
-						<img class="img-fluid my-icon" src="/imagens/icones/icon_coffee.png" alt="">
-					</div>
-					<h3 class="sm-margin-v">Time de Desenvolvimento</h3>
-					<p class="text-justify container">
-						Nossos desenvolvedores são capacitados para criar projetos nas mais diversas tecnologias atuais, garantindo a satisfação
-						dos clientes. Contamos com o apoio do professor orientador, que está sempre em busca de cursos e aperfeiçoamento para
-						os membros.
+
+				<div class = "sobreNos-quadro">
+					<img src = "imagens/icones/icon_coffee.png">
+					<h1> Time de Desenvolvimento </h1>
+					<p> 
+						Nossos desenvolvedores são capacitados para criar projetos nas mais diversas tecnologias atuais, garantindo a 
+						satisfação dos clientes. Contamos com o apoio do professor orientador, que está sempre em busca de cursos e 
+						aperfeiçoamento para os membros.
 					</p>
 				</div>
-				<div class="col-md-4 col-sm-12">
-					<div class="container-fluid">
-						<img class="img-fluid my-icon" src="/imagens/icones/icon_cloud.png" alt="">
-					</div>
-					<h3 class="sm-margin-v">Serviços</h3>
-					<p class="text-justify container">
-						Buscando ser uma empresa que promove a inovação e a satisfação de nossos clientes, investimos em pesquisas e desenvolvimento
-						de áreas que estão em alta no mercado como aplicativos e sites. Sua ideia pode contar conosco.
+
+				<div class = "sobreNos-quadro">
+					<img src = "imagens/icones/icon_cloud.png">
+					<h1> Serviços </h1>
+					<p> 
+						Buscando ser uma empresa que promove a inovação e a satisfação de nossos clientes, investimos em pesquisas e 
+						desenvolvimento de áreas que estão em alta no mercado como aplicativos e sites. Sua ideia pode contar conosco.
 					</p>
 				</div>
 			</div>
 		</div>
-	</div>
 
+		<!-- ################################## PORTFÓLIO ##################################### -->
+		<div id = "portfolio" class = "frame portfolio">
+			<p class = "portfolio-subtitulo"> Nosso </p>
+			<p class = "portfolio-titulo"> PORTFÓLIO </p>
 
-	<!-- ################################## Portifolio ##################################### -->
-	<div id="portifolio" class="md-margin-v" style="color: white">
-		<div class="jumbotron my-jumbotron">
-			<div class="container text-center">
-				<br>
-				<h2 class="font-logo-h2">Portfólio</h2>
-				<div class="row lg-margin-v">
-					<div class="col-lg-4 col-md-6 col-sm-12">
-						<div class="img-portifolio margin-imagens">
-							<div class="relative">
-								<img class="img-fluid image" src="imagens/produtos/porticos.png" alt="Site da empresa porticos">
-								<div class="overlay">
-									<p class="text">Site desenvolvido para a Empresa Júnior de Engenharia Civil de nosso campus, Pórticos. Este possui a finalidade
-										de divulgar a empresa e seus serviços fornecer envio de e-mails, localização e expor os projetos já realizados
-										pela empresa.</p>
-								</div>
-							</div>
-							<p class="legenda">Site - Pórticos, EJ Engenharia Civil UTFPR , Campo Mourão</p>
-						</div>
+			<div class = "projetos">
+
+				<div class = "projeto">
+					<img src = "imagens/produtos/porticos.png" alt = "Site da Empresa Pórticos">
+					<div class = "overlay">
+						<p class = "text"> Site desenvolvido para a Empresa Júnior de Engenharia Civil de nosso câmpus, Pórticos. Este possui a finalidade
+							de divulgar a empresa e seus serviços: fornecer envio de e-mails, localização e expor os projetos já realizados
+							pela empresa. </p>
 					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12">
-						<div class="img-portifolio margin-imagens">
-							<div class="relative">
-								<img class="img-fluid" src="imagens/produtos/salasUTFPR.png" alt="Aplicativo para verificar salas livres na UTFPR campus Campo Mourão">
-								<div class="overlay">
-									<p class="text">O aplicativo desenvolvido pela Haken fornece a disponibilidade das salas da UTFPR, campus Campo Mourão, mostrando
-										ao usuário quais salas estão disponíveis e ocupadas no horário pesquisado. Sua organização é feita através dos
-										blocos do campus, e exibe para qual aula a sala está ocupada.</p>
-								</div>
-							</div>
-							<p class="legenda">Aplicativo - Disponibilidade de Sala UTFPR, Campo Mourão</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12">
-						<div class="img-portifolio margin-imagens">
-							<div class="relative">
-								<img class="img-fluid" src="imagens/produtos/caec.png" alt="Site do centro academico de Engenharia civil da UTFP-CM">
-								<div class="overlay container">
-									<p class="text">Site desenvolvido para o CAEC - Centro Acadêmico de Engenharia Civil de nosso campus. Este possui recursos úteis
-										para os alunos do curso, como emissão de certificados, portal transparência, envio de e-mails, etc. Além disso,
-										há informativos sobre o centro, sendo estes projetos realizados, fotos e outros.</p>
-								</div>
-							</div>
-							<p class="legenda">Site - Centro Acadêmico de Engenharia Civil, UTFPR, Campo Mourao</p>
-						</div>
-					</div>
+					<p class = "legenda"> Site - Pórticos, EJ Engenharia Civil UTFPR, Campo Mourão </p>
 				</div>
-			</div>
-		</div>
-	</div>
 
-
-	<!-- ################################## Contatos ##################################### -->
-	<div id="contato" class="container-fluid text-center">
-		<br>
-		<h2 class="lg-margin-v font-logo-h2">Contato</h2>
-		<div class="row lg-margin-v container margin-h">
-			<div class="col-md-4">
-				<a href="https://www.facebook.com/HakenEJ/" target="_blank">
-					<div class="container-fluid">
-						<img class="img-fluid my-icon zoom-in" src="/imagens/icones/icon_facebook.png" alt="">
+				<div class = "projeto">
+					<img src = "imagens/produtos/salasUTFPR.png" alt = "Aplicativo para verificar salas livres na UTFPR câmpus Campo Mourão">
+					<div class = "overlay">
+						<p class = "text"> O aplicativo desenvolvido pela Haken fornece a disponibilidade das salas da UTFPR, campus Campo Mourão, mostrando
+							ao usuário quais salas estão disponíveis e ocupadas no horário pesquisado. Sua organização é feita através dos
+							blocos do campus, e exibe para qual aula a sala está ocupada. </p>
 					</div>
-					<h3>Facebook</h3>
-				</a>
-			</div>
-			<div class="col-md-4">
-				<a data-toggle="modal" data-target="#mapModal">
-					<div class="container-fluid">
-						<img class="img-fluid my-icon zoom-in" src="/imagens/icones/icon_map.png" alt="">
+					<p class = "legenda"> Aplicativo - Disponibilidade de Sala UTFPR, Campo Mourão </p>
+				</div>
+
+				<div class = "projeto">
+					<img src = "imagens/produtos/caec.png" alt = "Site do centro academico de Engenharia Civil da UTFPR-CM">
+					<div class = "overlay">
+						<p class = "text"> Site desenvolvido para o CAEC - Centro Acadêmico de Engenharia Civil de nosso campus. Este possui recursos úteis
+							para os alunos do curso, como emissão de certificados, portal transparência, envio de e-mails, etc. Além disso,
+							há informativos sobre o centro, sendo estes projetos realizados, fotos e outros. </p>
 					</div>
-					<h3>Nossa Localização</h3>
-				</a>
-			</div>
-			<div class="col-md-4">
-				<a data-toggle="modal" data-target="#emailModal">
-					<div class="container-fluid">
-						<img class="img-fluid my-icon zoom-in" src="/imagens/icones/icon_email.png" alt="">
-					</div>
-					<h3>hakenej@gmail.com</h3>
-				</a>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- ################################## Rodape ##################################### -->
-	<footer class="jumbotron footer">
-		<div class="container text-center">
-			<span style="color: white">
-				Copyright &copy; 2018 Haken - Empresa Júnior de Ciência da Computação
-			</span>
-		</div>
-	</footer>
-	<!-- ################################## Fim do Site ##################################### -->
-
-	<!-- ################################## Modal Map ##################################### -->
-	<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="MapModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="MapModalLabel">Como chegar </h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<p class = "legenda"> Site - Centro Acadêmico de Engenharia Civil, UTFPR, Campo Mourão </p>
 				</div>
-				<div class="modal-body">
-					<div id="map">
 
-					</div>
+    	</div>
+
+		<!-- ################################## CONTATO ##################################### -->
+		<div id = "contato">
+			<p class = "contato-titulo"> CONTATO </p>
+			
+			<center>
+				<div class = "redes-sociais">
+					<a href = "https://www.facebook.com/HakenEJ/" target = "_blank">
+						<img src = "imagens/icones/icon_facebook.png">
+					</a>
+					<a>
+						<img src = "imagens/icones/icon_gmail.png">
+					</a>
+					<a href = "https://github.com/HakenEmpresaJunior/" target = "_blank">
+						<img src = "imagens/icones/icon_github.png">
+					</a>
 				</div>
-			</div>
+			</center>
+
+			<iframe class = "localizacao" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.137577285598!2d-52.38872908513314!3d-24.061459284436925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed756613064859%3A0xc12ba615c30491ed!2sUTFPR!5e0!3m2!1sen!2sbr!4v1521688974444" frameborder = "0" style = "border:0" allowfullscreen></iframe>
 		</div>
-	</div>
 
-	<!-- ################################## Modal Email ############################### -->
-	<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="EmailModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="EmailModalLabel">Enviar E-mail</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form id="emailForm">
-						<div class="form-group">
-							<label for="recipient-name" class="form-control-label">Email:</label>
-							<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Seu E-mail">
-							<div class="invalid-feedback" id="emailInvalid">
-								<!-- mensagem dinamica -->
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="recipient-name" class="form-control-label">Assunto:</label>
-							<input type="text" class="form-control" id="inputAssunto" name="assunto" placeholder="Assunsto do E-mail">
-							<div class="invalid-feedback" id="assuntoInvalid">
-								<!-- mensagem dinamica -->
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="message-text" class="form-control-label">Conteudo:</label>
-							<textarea class="form-control" id="inputConteudo" name="message" placeholder="Conteudo do E-mail" rows="10"></textarea>
-							<div class="invalid-feedback" id="conteudoInvalid">
-								<!-- mensagem dinamica -->
-							</div>
-						</div>
-						<input type="text" name="_gotcha" style="display:none" />
-						<div class="text-center">
-							<button class="btn btn-primary text-center my-btn" type="submit">Enviar</button>
-						</div>
-					</form>
-				</div>
-			</div>
+		<!-- ################################## Rodapé ##################################### -->
+		<div class = "barra-inf">
+			<p class = "barra-inf-texto">
+				Copyright © 2018 - HAKEN. Orgulhosamente criado por <i>HEXA6ON</i>.
+			</p>
 		</div>
-	</div>
 
-
-	<!-- ########################## Scripts ###############################-->
-
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-	 crossorigin="anonymous"></script>
-
-	<!-- send email -->
-	<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
-	<script src="/js/email.js"></script>
-
-	<!-- maps -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApN7eEDXhHL2a20_ytKg8sTZzP37TONoQ
-	&callback=initMap" async defer></script>
-	<script src="/js/mapa.js"></script>
-
-	<!-- scroll -->
-	<script src="/node_modules/jquery.scrollto/jquery.scrollTo.min.js" type="text/javascript"></script>
-	<script src="/node_modules/jquery.localscroll/jquery.localScroll.min.js" type="text/javascript"></script>
-	<script src="/js/scroll.js"></script>
-</body>
+	</body>
 
 </html>

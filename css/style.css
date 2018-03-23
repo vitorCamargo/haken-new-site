@@ -1,540 +1,264 @@
-/* Fontes */
-@font-face {
-	font-family: 'GeosansLight';
-	font-style: normal;
-	font-weight: normal;
-	src: local('GeosansLight'), url('/fonts/GeosansLight.woff') format('woff');
+/* CSS ALL-DEFAULT */
+body, html {
+    height: 100%;
+    margin: 0px;
 }
 
-
-@font-face {
-	font-family: 'GeosansLight-Oblique';
-	font-style: normal;
-	font-weight: normal;
-	src: local('GeosansLight-Oblique'), url('/fonts/GeosansLight-Oblique.woff') format('woff');
+.barra-sup, .barra-inf {
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 
-/* GERAL */
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+.barra-sup-texto, .barra-inf-texto {
+    letter-spacing: 0.05em;
+    color: #E8E8E8;
+    font: normal normal normal 16px/1.4em DINNeuzeitGrotesk;
+    vertical-align: top;
+    line-height: 54px;
+    margin: 0px;
 }
 
-body{
-	background-image: url('/imagens/fundo.png');
-	background-attachment: fixed;
-	height: 100%;
+.barra-inf {
+    height: 74px;
+    background: #0d1e47;
 }
 
-header {
-	background-image: url('/imagens/header.jpg');
-	background-size: cover;
-	background-position: 30% 30%;
-	height: 80%;
+.barra-inf-texto {
+    line-height: 74px;
 }
 
-.font-logo {
-	font-family: 'GeosansLight';
+::selection {
+	  background: rgba(255, 255, 255, 0.28);
 }
 
-.font-logo-brand {
-	font-family: 'GeosansLight';
-	font-size: 26px;
-	font-weight: bold;
+/* CSS MENU */
+.menu {
+    top: 84px;
+    right: 90px;
+    position: fixed;
+    z-index: 50;
+    height: 25px;
+    text-align: left;
 }
 
-.font-logo-h2 {
-	font-family: 'GeosansLight';
-	font-size: 65px;
-	/* font-weight: bold; */
+.item-menu {
+    font: normal normal normal 18px/1.4em DINNeuzeitGrotesk;
+    height: 25px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #2F2E2E;
+    transition: color 0.4s ease 0s;
 }
 
-.font-logo-item{
-	font-family: 'GeosansLight';
-	font-size: 20px;
-	font-weight: bold;
+.item-menu:hover {
+    color: #706D6D !important;
 }
 
-
-
-.my-navbar{
-	background-color: #07183e;
-	box-shadow: -1px 3px 3px #020e29;
+.item-selecionado {
+    color: #706D6D !important;
 }
 
-.margin-topbar-right{
-	margin-right: 60px;
+.frame {
+    width: 100%;
+    height: 100%;
 }
 
-.sm-margin-v{
-	margin-top: 30px;
-	margin-bottom: 30px;
+/* CSS HOME */
+.home {
+    height: calc(100% - 55px) !important;
+    background-size: cover;
+    background-position: center 0;
+    background-image: url("../imagens/home.png");
 }
 
-.md-margin-v{
-	margin-top: 50px;
-	margin-bottom: 50px;
+.logo {
+    padding-top: 45px;
+    text-align: center;
 }
 
-.lg-margin-v{
-	margin-top: 70px;
-	margin-bottom: 70px;
+.logo img {
+    height: 100px;
+    transform: rotate(3deg);
 }
 
-.sm-margin-h{
-	margin-left: 10px;
-	margin-right: 10px;
+.logo-text {
+    font: normal normal normal 30px/1.3em Lulo Clean, script;
+    color: #000000;
+    text-decoration: none;
 }
 
-.md-margin-h{
-	margin-left: 50px;
-	margin-right: 50px;
+.tag-text {
+    font: normal normal normal 23px/1.0em Belinda, script;
+    color: #000000;
+    text-decoration: none;
 }
 
-.lg-margin-h{
-	margin-left: 90px;
-	margin-right: 90px;
+.slogan {
+    padding-top: 55px;
+    text-align: right;
+    width: 30%;
+    margin-left: 50%;
 }
 
-.margin-h{
-	margin-left: auto;
-	margin-right: auto;
+/* CSS SOBRE NÓS */
+.sobreNos img {
+    float: right;
+    width: 450px;
+    margin-top: calc(50% - 650px);
+    margin-right: 110px;
 }
 
-.margin-v{
-	margin-top: auto;
-	margin-bottom: auto;
+.descricao {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 50%;
+    margin-left: 10%;
 }
 
-.my-icon{
-	height: 43%;
-	width: 35%;
+.descricao .tag-text {
+    color: #0e1e47e3;
 }
 
-
-/* HEADER */
-.img-logo {
-	height: 20%;
+.descricao-text {
+    font: normal normal normal 25px/1.4em DINNeuzeitGrotesk;
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
 }
 
-.header{
-	margin-top: 65px;
+.quadros {
+    margin: 30px 9%;
+    display: -webkit-inline-box;
 }
 
-.header-conteudo{
-	position: absolute;
-	background-color: #0000009a;
-	border-radius: 10px;
-	padding: 25px;
-	color: white;
+.sobreNos-quadro {
+    margin-left: 2%;
+    width: 29%;
+    text-align: justify;
+    margin-bottom: 50px;
+    font: normal normal normal 20px/1.4em DINNeuzeitGrotesk;
+    color: #000000;
+    text-decoration: none;
 }
 
-.header-text{
-	font-family: 'GeosansLight';
-	font-size: 60px;
-	font-weight: 300;
-	/* font-style: normal;
-	font-stretch: normal; */
-	line-height: 0.57;
-	letter-spacing: 1.2px;
-	text-align: center;
-	color: #c8c8c8;
-	margin-left: 0;
-	margin-top: 3px;
+.sobreNos-quadro img {
+    float: none;
+    width: 120px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: calc(50% - 60px);
+    margin-right: 0;
 }
 
-.header-logo{
-	margin-right: -80px;
+.sobreNos-quadro h1 {
+    text-align: center;
+    font: normal normal normal 20px/1.4em Lulo Clean;
+    letter-spacing: -0.18em;
+    color: #0e1e47e3;
 }
 
-.header-text-responsive{
-	width: 700px;
-}
-.position-header-conteudo{
-	position: absolute;
-	top: 15%;
-	left: 40%;
-}
-
-.my-header{
-	margin-bottom: 70px;
+/* CSS PORTFOLIO */
+.portfolio {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-image: url("../imagens/portfolio.png");
 }
 
-.my-nav-link{
-	color: #FFFFFF;
-	font-weight: 600;
+.portfolio-titulo {
+    letter-spacing: -0.18em;
+    font: normal normal normal 90px/1.4em Lulo Clean;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    transition: all 0.3s ease;
 }
 
-.btn-header{
-	opacity: 0.4;
-	border-radius: 10px;
-	background-color: #c5c2c2;
-	background-color: var(--white);
-	border: solid 3.8px #ffffff;
-	border: solid 3.8px var(--white);
-	font-size: 30px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.13;
-	letter-spacing: 0.6px;
-	text-align: justify;
-	color: #070230;
-	box-shadow: 5px 5px 5px black;
+.portfolio-subtitulo {
+    font: normal normal normal 53px/1.4em Belinda;
+    margin: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 85px;
+    transition: all 0.3s ease;
 }
 
-#btn-header{
-	text-align: right;
+.projetos {
+    margin: 30px 9%;
+    display: -webkit-inline-box;
 }
 
-/* Header Responsivo */
-
-@media only screen and (max-width: 1439px) {
-	.header-text-responsive{
-		width: 700px;
-	}
-	.position-header-conteudo{
-		position: absolute;
-		top: 15%;
-		left: 40%;
-	}
-
-	.header-logo{
-		margin-right: -80px;
-		height: 100px;
-	}
-
-	#btn-header{
-		margin-top: 20px;
-	}
+.projeto {
+    border: 10px solid #fff;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 2%;
+    width: 29%;
+    text-align: center;
 }
 
-@media only screen and (max-width: 1300px) {
-	.header-text-responsive{
-		width: 500px;
-	}
-	.position-header-conteudo{
-		position: absolute;
-		top: 15%;
-		left: 40%;
-	}
-
-	.header-logo{
-		margin-right: -70px;
-		height: 100px;
-	}
-
-	#btn-header{
-		margin-top: 20px;
-	}
+.projeto img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
-
-@media only screen and (max-width: 1024px) {
-	.header-text-responsive{
-		width: 450px;
-	}
-	.position-header-conteudo{
-		position: absolute;
-		top: 15%;
-		left: 35%;
-	}
-
-	.header-logo{
-		margin-right: -70px;
-		height: 100px;
-	}
-
-	#btn-header{
-		margin-top: 20px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.header-text-responsive{
-		width: 400px;
-		font-size: 50px;
-	}
-	.position-header-conteudo{
-		position: absolute;
-		top: 15%;
-		left: 30%;
-	}
-
-	.header-logo{
-		margin-right: -100px;
-	}
-
-	#btn-header{
-		margin-top: 40px;
-	}
-}
-
-@media only screen and (max-width: 575px) {
-	.header-text-responsive{
-		width: 350px;
-		font-size: 37px;
-	}
-	
-	.position-header-conteudo{
-		position: absolute;
-		top: 15%;
-		left: 30%;
-	}
-
-	.header-logo{
-		margin-right: -80px;
-		height: 100px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.header-text-responsive{
-		width: 300px;
-		font-size: 37px;
-	}
-	
-	.position-header-conteudo{
-		position: absolute;
-		top: 25%;
-		left: 17%;
-	}
-
-	#btn-header{
-		margin-top: 80px;
-		text-align: center;
-	}
-
-	header {
-		background-position: 70% 10%;
-	}
-	
-}
-
-@media only screen and (max-width: 424px) {
-	.header-text-responsive{
-		width: 300px;
-		font-size: 50px;
-	}
-	
-	.position-header-conteudo{
-		position: absolute;
-		top: 25%;
-		left: 10%;
-	}
-
-	.header-logo{
-		margin-right: -60px;
-		height: 100px;
-	}
-
-	#btn-header{
-		margin-top: 120px;
-	}
-
-	header {
-		background-position: 65% 1%;
-	}
-}
-
-@media only screen and (max-width: 374px) {
-	.header-text-responsive{
-		width: 270px;
-		font-size: 50px;
-	}
-	
-	.position-header-conteudo{
-		position: absolute;
-		top: 28%;
-		left: 10%;
-	}
-
-	.header-logo{
-		margin-right: -60px;
-		height: 100px;
-	}
-
-	#btn-header{
-		margin-top: 120px;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	.header-text-responsive{
-		width: 270px;
-		font-size: 30px;
-	}
-	
-	.position-header-conteudo{
-		position: absolute;
-		top: 30%;
-		left: 10%;
-	}
-
-	.header-logo{
-		margin-right: -80px;
-		height: 100px;
-	}
-
-	#btn-header{
-		margin-top: 120px;
-	}
-}
-
-/* SOBRE NOS */
-.margin-conteudo{
-	margin: 50px; 
-}
-
-@media only screen and (max-width: 500px) {
-	.margin-conteudo{
-		margin: auto;
-	}	
-}
-
-/* PORTIFOLIO */
-.my-jumbotron{
-	/* background-color: rgba(4, 13, 32, 0.75); */
-	background-color: rgba(6, 13, 27, 0.68);
-	border-radius: 0px;
-}
-
-.img-portifolio{
-	box-shadow: 5px 5px 7px #020e29;
-	max-width: 374px;
-}
-
-.relative {
-	position: relative;
-}
-
-.legenda {
-	background-color: #07183e;
-	padding-top: 3px;
-	padding-bottom: 2px;
-	min-height: 53px;
-}
-
-.margin-imagens{
-	margin: auto
-}
-
-
-.image {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 
 .overlay {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #07183edc;
-	overflow: hidden;
-	width: 100%;
-	height: 0;
-	transition: .5s ease;
-}
-
-.img-portifolio:hover .overlay {
-	height: 100%;
+	display: none;
 }
 
 .text {
-	padding: 10px;
-	color: white;
-	/* font-size: 14px; */
-	position: absolute;
-	overflow: hidden;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	width: 100%;
-	max-height: 100%;
-	max-width: 100%;
-	text-align: justify;
+    color: #000000;
+    font: normal normal normal 20px/1.4em DINNeuzeitGrotesk;
 }
 
-
-@media only screen and (max-width: 500px) {
-	.margin-conteudo{
-		margin: auto;
-	}	
+.legenda {
+    color: #000000;
+    font: normal normal normal 20px/1.4em DINNeuzeitGrotesk;
 }
 
-@media only screen and (max-width: 320px) {
-	.text {
-		padding: 3px;
-		color: white;
-		font-size: 14px;
-		position: absolute;
-		overflow: hidden;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		width: 100%;
-		max-height: 100%;
-		max-width: 100%;
-		text-align: justify;
-	}
+/* CSS CONTATO */
+.localizacao {
+    margin-top: 30px;
+    height: 250px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 100px;
 }
 
-/* CONTATOS */
-.zoom-in {
-	-webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
-    -ms-transition: all 250ms ease;
-    transition: all 250ms ease;
+.contato-titulo {
+    letter-spacing: -0.18em;
+    font: normal normal normal 50px/1.4em Lulo Clean;
+    color: #0d1e47;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
 }
 
-.zoom-in:hover {
-	-webkit-transform: scale(1.1, 1.1);
-    -moz-transform: scale(1.1, 1.1);
-    -o-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
+.redes-sociais {
+    width: 15%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 35px;
 }
 
-/* Always set the map height explicitly to define the size of the div
-* element that contains the map. */
-#map {
-	/* width: 768px; */
-	height: 700px;
-	margin-bottom: 20px;
+.redes-sociais a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
 
-
-
-#contato a {
-	color: black;
-	font-weight: 300; 
+.redes-sociais img {
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: 3px;
 }
 
-#contato a:hover {
-	text-decoration: none;
-}
-
-.my-btn {
-	background-color: #07183e;
-	border: black;
-}
-
-.my-btn:hover {
-	background-color: #14357c;
-}
-
-/* FOOTER */
-.footer{
-	background-color: #07183e;
-	margin-bottom: -1px;
-	border-radius: 0px;
+.redes-sociais img:hover {
+    background: rgba(255, 255, 255, 0.28);
+    filter: blur(1px);
 }
