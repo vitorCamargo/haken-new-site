@@ -214,6 +214,7 @@ section.home {
     padding-top: 140px;
     background: #0C2134;
     background-size: cover;
+    background-attachment: fixed;
     background-image: linear-gradient(#0c2134b0, #0c2134e0), url(../images/back.jpg);
     overflow: hidden;
     position: relative;
