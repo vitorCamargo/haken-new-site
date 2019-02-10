@@ -1,165 +1,124 @@
 <!DOCTYPE html>
 <html lang = "pt-BR">
-
 	<head>
-		<title> Haken </title>
+		<title> HAKEN · Home </title>
 
 		<meta charset = "UTF-8">
+		<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8">
+		<meta http-equiv = "content-type" content = "text/html; utf-8">
+		<meta http-equiv = "content-language" content = "pt-br">
+
 		<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel = "shortcut icon" type = "image/x-icon" href = "imagens/favicon.ico">
+		<meta name = "author" content = "Haken">
+		<meta name = "description" content = "Haken, Empresa Júnior de Ciência da Computação, UTFPR.">
+		<meta name = "keywords" content = "web, desenvolvimento, site, haken, empresa, júnior, EJ, desenvolvedores, aplicativos, mobile, consultoria">
 
-		<link rel = "stylesheet" href = "css/fonts.css">
+		<link rel = "icon" type = "image/png" href = "images/logo-icon.png">
 
 		<link rel = "stylesheet" href = "css/style.css">
 	</head>
 
 	<body>
-
-		<!-- ################################## Header & Menu ##################################### -->
-		<div class = "barra-sup">
-			<p class = "barra-sup-texto">
-				HAKEN - EMPRESA JÚNIOR DE CIÊNCIA DA COMPUTAÇÃO
-			</p>
-		</div>
-
-		<div class = "menu">
-			<a class = "item-menu" href = "#sobreNos" target = "_self"> SOBRE NÓS </a>
-			<a class = "item-menu" href = "#portfolio" target = "_self"> PORTFÓLIO </a>
-			<a class = "item-menu" href = "#contato" target = "_self"> CONTATO </a>
-			<a class = "item-menu item-selecionado" href = "#home" target = "_self"> HAKEN </a>
-		</div>
-
-		<!-- ################################## HOME ##################################### -->
-		<div id = "home" class = "frame home">
-			<div class = "logo">
-				<a class = "logo-text" href = "#home" target = "_self">
-					<img src = "imagens/logo/logo-black.png">
+		<header>
+			<div class = "container">
+				<a href = "index.html" class = "logo-container">
+					<img src = "images/logo.png">
 				</a>
+
+				<div class = "mobile-menu">
+					<nav id = "headernav" role = "navigation">
+						<div class = "menu-primary-container">
+							<ul id = "menu-primary-1" class = "menu">
+								<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-187">
+									<a href = "servicos.html"> Serviços </a>
+								</li>
+
+								<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-191">
+									<a href = "portifolio.html"> Nosso Potfólio </a>
+								</li>
+
+								<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-187">
+									<a href = "sobreNos.html"> Sobre Nós </a>
+								</li>
+								
+								<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-187">
+									<a href = "#contato"> Contate-Nos </a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
+		</header>
+
+		<section class = "home">
 			<div class = "slogan">
-				<p class = "tag-text"> &lt;p&gt; </p>
-				<p class = "logo-text"> Impulsione-se para o sucesso </p>
-				<p class = "tag-text"> &lt;/p&gt; </p>
-			</div>
-		</div>
+				<div class = "container">
+					<h1> 
+						Impulsione-se para <br/>
+						o <span class = "txt-rotate" data-period = "1000" data-rotate = '[ "Futuro.", "Sucesso." ]'></span>
+					</h1>
 
-		<!-- ################################## SOBRE NÓS ##################################### -->
-		<div id = "sobreNos" class = "sobreNos">
-			<img src = "imagens/logo/logo_haken.png" alt = "Logo da Empresa Haken">
-			<div class = "descricao">
-				<p class = "tag-text"> &lt;p&gt; </p>
-				<p class = "descricao-text">
-					Nós, a Haken Empresa Júnior de Ciência da Computação da UTFPR- Campo Mourão, somos uma empresa voltada
-					para a área tecnológica, em específico ao desenvolvimento de softwares. Desenvolvemos uma vasta gama de
-					sistemas, de sites a aplicativos mobile, e estamos sempre em busca tecnologias inovadoras. Focamos em
-					inovação, afinal ideias novas requerem tecnologias também novas e potentes. Sua ideia pode contar com
-					nossos códigos!
-				</p>
-				<p class = "tag-text"> &lt;/p&gt; </p>
-			</div>
-		</div>
-		
-		<div class = "sobreNos">
-			<div class = "quadros">
-				<div class = "sobreNos-quadro">
-					<img src = "imagens/icones/icon_person.png">
-					<h1> Empresa </h1>
-					<p> 
-						Somos uma empresa formada e gerida por alunos do Bacharelado em Ciência da Computação, da Universidade Tecnológica 
-						Federal do Paraná, campus de Campo Mourão. Visamos acima de tudo o crescimento profissional de nossos membros e qualidade 
-						nos projetos realizados.
-					</p>
-				</div>
-
-				<div class = "sobreNos-quadro">
-					<img src = "imagens/icones/icon_coffee.png">
-					<h1> Time de Desenvolvimento </h1>
-					<p> 
-						Nossos desenvolvedores são capacitados para criar projetos nas mais diversas tecnologias atuais, garantindo a 
-						satisfação dos clientes. Contamos com o apoio do professor orientador, que está sempre em busca de cursos e 
-						aperfeiçoamento para os membros.
-					</p>
-				</div>
-
-				<div class = "sobreNos-quadro">
-					<img src = "imagens/icones/icon_cloud.png">
-					<h1> Serviços </h1>
-					<p> 
-						Buscando ser uma empresa que promove a inovação e a satisfação de nossos clientes, investimos em pesquisas e 
-						desenvolvimento de áreas que estão em alta no mercado como aplicativos e sites. Sua ideia pode contar conosco.
-					</p>
+					<h3 class = "large-copy">
+						<p> 
+							Nós somos uma empresa voltada para a área tecnológica, participando do movimento <b> Empresa Júnior </b>. <br />
+							<i> Seja parte deste movimento! </i>
+						</p>
+					</h3>
+					
+					<div class = "line"></div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<!-- ################################## PORTFÓLIO ##################################### -->
-		<div id = "portfolio" class = "frame portfolio">
-			<p class = "portfolio-subtitulo"> Nosso </p>
-			<p class = "portfolio-titulo"> PORTFÓLIO </p>
+		<section style = "height: 1000px;">
+			kjbkjk
+		</section>
 
-			<div class = "projetos">
-
-				<div class = "projeto">
-					<img src = "imagens/produtos/porticos.png" alt = "Site da Empresa Pórticos">
-					<div class = "overlay">
-						<p class = "text"> Site desenvolvido para a Empresa Júnior de Engenharia Civil de nosso câmpus, Pórticos. Este possui a finalidade
-							de divulgar a empresa e seus serviços: fornecer envio de e-mails, localização e expor os projetos já realizados
-							pela empresa. </p>
-					</div>
-					<p class = "legenda"> Site - Pórticos, EJ Engenharia Civil UTFPR, Campo Mourão </p>
-				</div>
-
-				<div class = "projeto">
-					<img src = "imagens/produtos/salasUTFPR.png" alt = "Aplicativo para verificar salas livres na UTFPR câmpus Campo Mourão">
-					<div class = "overlay">
-						<p class = "text"> O aplicativo desenvolvido pela Haken fornece a disponibilidade das salas da UTFPR, campus Campo Mourão, mostrando
-							ao usuário quais salas estão disponíveis e ocupadas no horário pesquisado. Sua organização é feita através dos
-							blocos do campus, e exibe para qual aula a sala está ocupada. </p>
-					</div>
-					<p class = "legenda"> Aplicativo - Disponibilidade de Sala UTFPR, Campo Mourão </p>
-				</div>
-
-				<div class = "projeto">
-					<img src = "imagens/produtos/caec.png" alt = "Site do centro academico de Engenharia Civil da UTFPR-CM">
-					<div class = "overlay">
-						<p class = "text"> Site desenvolvido para o CAEC - Centro Acadêmico de Engenharia Civil de nosso campus. Este possui recursos úteis
-							para os alunos do curso, como emissão de certificados, portal transparência, envio de e-mails, etc. Além disso,
-							há informativos sobre o centro, sendo estes projetos realizados, fotos e outros. </p>
-					</div>
-					<p class = "legenda"> Site - Centro Acadêmico de Engenharia Civil, UTFPR, Campo Mourão </p>
-				</div>
-
-    	</div>
-
-		<!-- ################################## CONTATO ##################################### -->
-		<div id = "contato">
-			<p class = "contato-titulo"> CONTATO </p>
+		<script>
+            var TxtRotate = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+			};
 			
-			<center>
-				<div class = "redes-sociais">
-					<a href = "https://www.facebook.com/HakenEJ/" target = "_blank">
-						<img src = "imagens/icones/icon_facebook.png">
-					</a>
-					<a>
-						<img src = "imagens/icones/icon_gmail.png">
-					</a>
-					<a href = "https://github.com/HakenEmpresaJunior/" target = "_blank">
-						<img src = "imagens/icones/icon_github.png">
-					</a>
-				</div>
-			</center>
-
-			<iframe class = "localizacao" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.137577285598!2d-52.38872908513314!3d-24.061459284436925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed756613064859%3A0xc12ba615c30491ed!2sUTFPR!5e0!3m2!1sen!2sbr!4v1521688974444" frameborder = "0" style = "border:0" allowfullscreen></iframe>
-		</div>
-
-		<!-- ################################## Rodapé ##################################### -->
-		<div class = "barra-inf">
-			<p class = "barra-inf-texto">
-				Copyright © 2018 - HAKEN. Orgulhosamente criado por <i>HEXA6ON</i>.
-			</p>
-		</div>
-
+            TxtRotate.prototype.tick = function() {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+                this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+                var that = this;
+                var delta = 300 - Math.random() * 100;
+                if(this.isDeleting) delta /= 2;
+                if(!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                } else if(this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                }
+                setTimeout(function() {
+                    that.tick();
+                }, delta);
+            };
+            window.onload = function() {
+                var elements = document.getElementsByClassName('txt-rotate');
+                for(var i = 0; i < elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-rotate');
+                    var period = elements[i].getAttribute('data-period');
+                    if(toRotate)  new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            };
+        </script>
 	</body>
-
 </html>

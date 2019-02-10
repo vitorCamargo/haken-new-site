@@ -1,264 +1,258 @@
-/* CSS ALL-DEFAULT */
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+
 body, html {
-    height: 100%;
-    margin: 0px;
+    font-family: 'Maven Pro', sans-serif;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4em;
 }
 
-.barra-sup, .barra-inf {
+h1 {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
     width: 100%;
-    height: 54px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
+    height: 66px;
 }
 
-.barra-sup-texto, .barra-inf-texto {
-    letter-spacing: 0.05em;
-    color: #E8E8E8;
-    font: normal normal normal 16px/1.4em DINNeuzeitGrotesk;
-    vertical-align: top;
-    line-height: 54px;
-    margin: 0px;
-}
-
-.barra-inf {
-    height: 74px;
-    background: #0d1e47;
-}
-
-.barra-inf-texto {
-    line-height: 74px;
-}
-
-::selection {
-	  background: rgba(255, 255, 255, 0.28);
-}
-
-/* CSS MENU */
-.menu {
-    top: 84px;
-    right: 90px;
-    position: fixed;
-    z-index: 50;
-    height: 25px;
-    text-align: left;
-}
-
-.item-menu {
-    font: normal normal normal 18px/1.4em DINNeuzeitGrotesk;
-    height: 25px;
-    text-decoration: none;
-    padding: 0 10px;
-    color: #2F2E2E;
-    transition: color 0.4s ease 0s;
-}
-
-.item-menu:hover {
-    color: #706D6D !important;
-}
-
-.item-selecionado {
-    color: #706D6D !important;
-}
-
-.frame {
+header .container {
+    position: relative;
     width: 100%;
-    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 30px;
 }
 
-/* CSS HOME */
-.home {
-    height: calc(100% - 55px) !important;
-    background-size: cover;
-    background-position: center 0;
-    background-image: url("../imagens/home.png");
+header .logo-container {
+    float: left;
+    display: block;
+    width: 50px;
 }
 
-.logo {
-    padding-top: 45px;
-    text-align: center;
+header .logo-container img {
+    width: 100%;
 }
 
-.logo img {
-    height: 100px;
-    transform: rotate(3deg);
+header .mobile-menu {
+    background: none;
+    position: relative;
+    top: auto;
 }
 
-.logo-text {
-    font: normal normal normal 30px/1.3em Lulo Clean, script;
-    color: #000000;
-    text-decoration: none;
+header .mobile-menu {
+    position: absolute;
+    z-index: 9999;
+    top: -800px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    background: white;
+    -webkit-transition: top 0.5s ease-in-out;
+    -moz-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 
-.tag-text {
-    font: normal normal normal 23px/1.0em Belinda, script;
-    color: #000000;
-    text-decoration: none;
+header .mobile-menu {
+    background: none;
+    position: relative;
+    top: auto;
 }
 
-.slogan {
-    padding-top: 55px;
-    text-align: right;
-    width: 30%;
-    margin-left: 50%;
+header .mobile-menu .mobile-menu-header {
+    background: #0C2134;
+    height: 66px;
 }
 
-/* CSS SOBRE NÓS */
-.sobreNos img {
+header .mobile-menu .mobile-menu-header {
+    display: none;
+}
+
+header nav {
+    width: 100%;
     float: right;
-    width: 450px;
-    margin-top: calc(50% - 650px);
-    margin-right: 110px;
+    background: #0C2134;
 }
 
-.descricao {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    width: 50%;
-    margin-left: 10%;
+header nav {
+    width: 70%;
+    background: none;
 }
 
-.descricao .tag-text {
-    color: #0e1e47e3;
+header nav .menu-high-alpha-menu-container::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
-.descricao-text {
-    font: normal normal normal 25px/1.4em DINNeuzeitGrotesk;
-    color: #000000;
-    text-decoration: none;
-    text-align: justify;
-}
-
-.quadros {
-    margin: 30px 9%;
-    display: -webkit-inline-box;
-}
-
-.sobreNos-quadro {
-    margin-left: 2%;
-    width: 29%;
-    text-align: justify;
-    margin-bottom: 50px;
-    font: normal normal normal 20px/1.4em DINNeuzeitGrotesk;
-    color: #000000;
-    text-decoration: none;
-}
-
-.sobreNos-quadro img {
+header nav ul {
+    display: block;
     float: none;
-    width: 120px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    margin-left: calc(50% - 60px);
+}
+
+header nav ul {
+    float: right;
+    margin: 12px 0 0 0;
+}
+      
+header nav ul:hover li a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header nav ul:hover li a {
+    color: rgba(255, 255, 255, 0.2);
+}
+    
+header nav:first-child li {
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+      
+header nav:first-child li:hover {
+    color: #fff;
+    border-radius: 6px 6px 0px 0px;
+}
+
+header nav:first-child li:hover a {
+    opacity: 1;
+}
+        
+header nav:first-child li:hover .sub-menu {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    visibility: visible;
+    transform: translate(0, 0);
+}
+      
+header nav:first-child li {
+    width: auto;
+    color: #fff;
+}
+      
+header nav:first-child li:first-child a {
+    margin-left: 0;
+}
+
+header nav:first-child li a {
+    font-size: 1.2em;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav:first-child li a {
+    font-weight: 300;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0;
+    margin: 0 0 0 15px;
+}
+
+header nav:first-child li a:hover {
+    color: white !important;
+}
+
+header nav:first-child li a:last-child {
     margin-right: 0;
 }
-
-.sobreNos-quadro h1 {
-    text-align: center;
-    font: normal normal normal 20px/1.4em Lulo Clean;
-    letter-spacing: -0.18em;
-    color: #0e1e47e3;
+              
+header nav:first-child li a {
+    margin: 0 0 0 30px;
 }
 
-/* CSS PORTFOLIO */
-.portfolio {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center 0;
-    background-image: url("../imagens/portfolio.png");
-}
-
-.portfolio-titulo {
-    letter-spacing: -0.18em;
-    font: normal normal normal 90px/1.4em Lulo Clean;
-    color: #FFFFFF;
-    text-align: center;
+nav ul, nav ol {
     margin: 0;
-    transition: all 0.3s ease;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
 }
 
-.portfolio-subtitulo {
-    font: normal normal normal 53px/1.4em Belinda;
-    margin: 0px;
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 85px;
-    transition: all 0.3s ease;
-}
-
-.projetos {
-    margin: 30px 9%;
-    display: -webkit-inline-box;
-}
-
-.projeto {
-    border: 10px solid #fff;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-left: 2%;
-    width: 29%;
-    text-align: center;
-}
-
-.projeto img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.overlay {
-	display: none;
-}
-
-.text {
-    color: #000000;
-    font: normal normal normal 20px/1.4em DINNeuzeitGrotesk;
-}
-
-.legenda {
-    color: #000000;
-    font: normal normal normal 20px/1.4em DINNeuzeitGrotesk;
-}
-
-/* CSS CONTATO */
-.localizacao {
-    margin-top: 30px;
-    height: 250px;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 100px;
-}
-
-.contato-titulo {
-    letter-spacing: -0.18em;
-    font: normal normal normal 50px/1.4em Lulo Clean;
-    color: #0d1e47;
-    text-align: center;
-    padding-top: 5%;
-    margin-top: 0;
-    margin-bottom: 0;
-    transition: all 0.3s ease;
-}
-
-.redes-sociais {
-    width: 15%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 35px;
-}
-
-.redes-sociais a {
+a {
     text-decoration: none;
-    outline: none;
-    cursor: pointer;
+    color: #efc461;
+    outline: 0 !important;
 }
 
-.redes-sociais img {
-    max-height: 100%;
-    max-width: 100%;
-    margin-left: 3px;
+header a {
+    margin-top: 20px !important;
 }
 
-.redes-sociais img:hover {
-    background: rgba(255, 255, 255, 0.28);
-    filter: blur(1px);
+section.home {
+    padding-top: 140px;
+    background: #0C2134;
+    background-size: cover;
+    background-image: linear-gradient(#0c2134b0, #0c2134e0), url(../images/back.jpg);
+    overflow: hidden;
+    position: relative;
+}
+
+section.home:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
+section.home:before, section.home:after {
+    background: #FFFFFF;
+}
+
+section.home .slogan {
+    padding: 40px 0 0 0;
+}
+
+section.home .container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 20px;
+}
+
+section.home h1 {
+    text-align: left;
+    letter-spacing: -.03em;
+    line-height: 1.2em;
+    margin: 0 auto;
+    font-size: 4em;
+    width: 60%;
+}
+
+section.home h3 {
+    width: 55%;
+    margin-left: 20%;
+    font-weight: 100;
+    line-height: 1.5em;
+    color: #FFFFFFCF;
+}
+
+.line {
+    width: 80px;
+    height: 3px;
+    background: #1c6cff;
+    margin: 20px 0 200px 0;
+    margin-left: 20%;
 }
