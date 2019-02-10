@@ -8,6 +8,7 @@ body, html {
     padding: 0;
     font-size: 16px;
     line-height: 1.4em;
+    transition: all 0.5s ease-in-out;
 }
 
 h1 {
@@ -30,7 +31,6 @@ header .container {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 20px;
     padding-top: 30px;
 }
 
@@ -38,10 +38,12 @@ header .logo-container {
     float: left;
     display: block;
     width: 50px;
+    padding-left: 20px;
 }
 
 header .logo-container img {
     width: 100%;
+    transition: 0.5s ease-in-out;
 }
 
 header .mobile-menu {
@@ -88,6 +90,7 @@ header nav {
 header nav {
     width: 70%;
     background: none;
+    padding-right: 20px;
 }
 
 header nav .menu-high-alpha-menu-container::after {
@@ -97,12 +100,8 @@ header nav .menu-high-alpha-menu-container::after {
 }
 
 header nav ul {
-    display: block;
-    float: none;
-}
-
-header nav ul {
     float: right;
+    display: block;
     margin: 12px 0 0 0;
 }
       
@@ -179,6 +178,69 @@ header nav:first-child li a:last-child {
               
 header nav:first-child li a {
     margin: 0 0 0 30px;
+}
+
+header .hambuguer-menu .container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hambuguer-menu {
+    float: right;
+    padding-right: 20px;
+    display: none;
+    transition: all 0.6s ease-in-out;
+}
+
+.bar1 { width: 18px; }
+
+.bar2 {
+    width: 15px;
+    margin-left: 3px !important;
+}
+
+.bar3 {
+    width: 10px;
+    margin-left: 8px !important;
+}
+ 
+.bar1, .bar2, .bar3 {
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(1px, 0px);
+    transform: rotate(-45deg) translate(1px, 0px);
+    background: #0C2134 !important;
+}
+
+.change .bar2 { opacity: 0; }
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-15px, -7px);
+    transform: rotate(45deg) translate(-15px, -7px);
+    width: 18px;
+    background: #0C2134 !important;
+}
+
+.changeBody {
+    margin-right: 300px;
+    margin-left: calc(0% - 300px);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.changeBody .logo-container img {
+    margin-left: -300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.changeBody .hambuguer-menu {
+    padding-right: 250px;
+    transition: all 0.6s ease-in-out;
 }
 
 nav ul, nav ol {
@@ -269,4 +331,47 @@ section.home h3 {
     background: linear-gradient(90deg, rgb(22, 135, 237), rgb(28, 108, 255));
     margin: 20px 0 200px 0;
     margin-left: 20%;
+}
+
+@media only screen and (max-width: 910px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    section.home h1 {
+        font-size: 3em;
+        width: 80%;
+    }
+
+    section.home h3, .line {
+        margin-left: 10%;
+    }
+
+    .hambuguer-menu {
+        display: block;
+    }
+
+    header .logo-container {
+        width: 40px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .container {
+        padding-top: 0px;
+    }
+
+    .hambuguer-menu {
+        padding-top: 35px;
+    }
 }

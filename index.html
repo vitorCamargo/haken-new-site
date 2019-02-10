@@ -20,12 +20,20 @@
 		<link rel = "stylesheet" href = "css/pace-theme-minimal.css">
 	</head>
 
-	<body>
+	<body id = "body" onclick = "clickBody(this)">
 		<header>
 			<div class = "container">
 				<a href = "index.html" class = "logo-container">
 					<img src = "images/logo.png">
 				</a>
+
+				<div class = "hambuguer-menu">
+					<div id = "hamburguer-menu" class = "container" onclick = "toggleMenu(this)">
+						<div class = "bar1"></div>
+						<div class = "bar2"></div>
+						<div class = "bar3"></div>
+					</div>
+				</div>
 
 				<div class = "mobile-menu">
 					<nav id = "headernav" role = "navigation">
@@ -58,17 +66,17 @@
 				<div class = "container">
 					<h1> 
 						Impulsione-se para <br/>
-						o <span class = "txt-rotate" data-period = "1000" data-rotate = '[ "Futuro.", "Sucesso." ]'></span>
+						o <span class = "txt-rotate" data-period = "1000" data-rotate = '[ "Futuro.", "Sucesso." ]' />
 					</h1>
 
 					<h3 class = "large-copy">
 						<p> 
-							Nós somos uma empresa voltada para a área tecnológica, participando do movimento <b> Empresa Júnior </b>. <br />
+							Nós somos uma empresa voltada para a área tecnológica, participando do movimento <b> Empresa Júnior. </b><br />
 							<i> Seja parte deste movimento! </i>
 						</p>
 					</h3>
 					
-					<div class = "line"></div>
+					<div class = "line" />
 				</div>
 			</div>
 		</section>
@@ -78,7 +86,8 @@
 		</section>
 
 		<script src = "js/textRotation.js"></script>
-		<script src = "js/parallax.js"></script>
+		<!-- <script src = "js/parallax.js"></script> -->
+		<script src = "js/hamburguer-menu.js"></script>
 		<script src = "js/pace.min.js"></script>
 	</body>
 </html>
