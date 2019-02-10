@@ -188,6 +188,18 @@ nav ul, nav ol {
     list-style-image: none;
 }
 
+.icon {
+    z-index: 99999;
+    position: absolute;
+    display: block;
+    padding: 9px;
+    height: 42px;
+    width: 42px;
+    margin: 0px;
+    top: 17px;
+    right: 23px;
+}
+
 a {
     text-decoration: none;
     color: #efc461;
@@ -252,7 +264,8 @@ section.home h3 {
 .line {
     width: 80px;
     height: 3px;
-    background: #1c6cff;
+    background: -webkit-linear-gradient(90deg, rgb(22, 135, 237), rgb(28, 108, 255));
+    background: linear-gradient(90deg, rgb(22, 135, 237), rgb(28, 108, 255));
     margin: 20px 0 200px 0;
     margin-left: 20%;
 }
