@@ -9,6 +9,7 @@ body, html {
     font-size: 16px;
     line-height: 1.4em;
     transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -93,6 +94,22 @@ header nav {
     padding-right: 20px;
 }
 
+header.hamburguer-expanded nav {
+    width: calc(100% - 25px);
+    padding-right: 0;
+    font-size: 2em;
+}
+
+header.hamburguer-expanded nav:first-child li a {
+    margin: 0;
+    margin-top: 35px !important;
+}
+
+header.hamburguer-expanded nav:first-child li {
+    width: 100%;
+    text-align: left;
+}
+
 header nav .menu-high-alpha-menu-container::after {
     clear: both;
     content: "";
@@ -103,6 +120,10 @@ header nav ul {
     float: right;
     display: block;
     margin: 12px 0 0 0;
+}
+
+header.hamburguer-expanded nav ul {
+    margin: 70px 0 0 0;
 }
       
 header nav ul:hover li a {
@@ -214,7 +235,6 @@ header .hambuguer-menu .container {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(1px, 0px);
     transform: rotate(-45deg) translate(1px, 0px);
-    background: #0C2134 !important;
 }
 
 .change .bar2 { opacity: 0; }
@@ -223,14 +243,18 @@ header .hambuguer-menu .container {
     -webkit-transform: rotate(45deg) translate(-15px, -7px);
     transform: rotate(45deg) translate(-15px, -7px);
     width: 18px;
-    background: #0C2134 !important;
 }
 
 .changeBody {
     margin-right: 300px;
     margin-left: calc(0% - 300px);
     transition: all 0.5s ease-in-out;
+}
+
+.changeBody, .changeHTML {
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .changeBody .logo-container img {
@@ -248,6 +272,24 @@ nav ul, nav ol {
     padding: 0;
     list-style: none;
     list-style-image: none;
+}
+
+.hamburguer-expanded {
+    padding: 0;
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    right: 0;
+    left: calc(100% - 300px);
+    z-index: -1;
+    background: -webkit-linear-gradient(90deg, #0c2134, #0c2134e8);
+    background: linear-gradient(90deg, #0c2134, #0c2134e8);
+    transition: all 0.5s ease-in-out;
+}
+
+.changeBody .hamburguer-expanded {
+    right: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .icon {
@@ -365,6 +407,10 @@ section.home h3 {
 
     header nav ul {
         display: none;
+    }
+
+    header.hamburguer-expanded nav ul {
+        display: block;
     }
 
     header .container {

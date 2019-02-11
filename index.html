@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "pt-BR">
+<html id = "html" lang = "pt-BR">
 	<head>
 		<title> HAKEN · Home </title>
 
@@ -20,7 +20,33 @@
 		<link rel = "stylesheet" href = "css/pace-theme-minimal.css">
 	</head>
 
-	<body id = "body" onclick = "clickBody(this)">
+	<body id = "body">
+		<header class = "hamburguer-expanded container">
+			<div class = "mobile-menu">
+				<nav id = "headernav" role = "navigation">
+					<div class = "menu-primary-container">
+						<ul id = "menu-primary-1" class = "menu">
+							<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-187">
+								<a href = "servicos.html"> Serviços </a>
+							</li>
+
+							<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-190">
+								<a href = "portifolio.html"> Nosso Potfólio </a>
+							</li>
+
+							<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-189">
+								<a href = "sobreNos.html"> Sobre Nós </a>
+							</li>
+							
+							<li class = "menu-item menu-item-type-post_type menu-item-object-page menu-item-523">
+								<a href = "#contato"> Contate-Nos </a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
 		<header>
 			<div class = "container">
 				<a href = "index.html" class = "logo-container">
@@ -61,7 +87,7 @@
 			</div>
 		</header>
 
-		<section id = "parallax" class = "home">
+		<section id = "parallax" class = "home" onclick = "clickBody(this)">
 			<div class = "slogan">
 				<div class = "container">
 					<h1> 
@@ -81,7 +107,7 @@
 			</div>
 		</section>
 
-		<section style = "height: 1000px;">
+		<section style = "height: 1000px;" onclick = "clickBody(this)">
 			kjbkjk
 		</section>
 
