@@ -2,7 +2,7 @@
 
 body, html {
     font-family: 'Maven Pro', sans-serif;
-    background: #FFFFFF;
+    background: #FAFAFA;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
@@ -314,7 +314,7 @@ header a {
     margin-top: 20px !important;
 }
 
-section.home {
+section.section-home {
     padding-top: 140px;
     background: #0C2134;
     background-size: cover;
@@ -324,7 +324,7 @@ section.home {
     position: relative;
 }
 
-section.home:before {
+section.section-home:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -333,23 +333,20 @@ section.home:before {
     height: 200px;
     -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    background: #FAFAFA;
 }
 
-section.home:before, section.home:after {
-    background: #FFFFFF;
-}
-
-section.home .slogan {
+section.section-home .slogan {
     padding: 40px 0 0 0;
 }
 
-section.home .container {
+section.section-home .container {
     width: 100%;
     max-width: 1024px;
     padding: 0 20px;
 }
 
-section.home h1 {
+section.section-home h1 {
     text-align: left;
     letter-spacing: -.03em;
     line-height: 1.2em;
@@ -358,12 +355,70 @@ section.home h1 {
     width: 60%;
 }
 
-section.home h3 {
+section.section-home h3 {
     width: 55%;
     margin-left: 20%;
     font-weight: 100;
     line-height: 1.5em;
     color: #FFFFFFCF;
+}
+
+section.section-servicos {
+    padding: 0 0 50px 0;
+}
+
+section.section-servicos .container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+section.section-servicos .container-exp {
+    display: block;
+    margin-left: 50%;
+    width: 50%;
+}
+
+.container-exp h2 {
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 500;
+    text-align: right;
+    color: #0C2134;
+    letter-spacing: -.03em;
+    margin: 0;
+    overflow: hidden;
+}
+
+.marquee {
+    color: #C7BB7B;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    text-align: right;
+    font-weight: 500;
+    margin: 0;
+}
+
+.desc {
+    display: flex !important;
+}
+
+.desc .line {
+    height: 6px;
+    display: block;
+    margin-left: 0%;
+    margin: 25px 0 0 20px;
+}
+
+.desc p {
+    margin-right: 0;
+    text-align: right;
+    margin-top: 15px;
+    display: block;
+    width: calc(100% - 100px);
+    line-height: 1.5em;
+    font-size: 1.25em;
+    color: #0C2134;
 }
 
 .line {
@@ -373,6 +428,62 @@ section.home h3 {
     background: linear-gradient(90deg, rgb(22, 135, 237), rgb(28, 108, 255));
     margin: 20px 0 200px 0;
     margin-left: 20%;
+}
+
+.container-servicos {
+    height: 300px;
+    display: flex;
+}
+
+.container-servicos img {
+    height: inherit;
+    width: 50%;
+    object-fit: cover;
+}
+
+.conteudo {
+    width: calc(100% - 45px);
+    color: #0C2134;
+    margin: auto 100px;
+}
+
+.conteudo h3 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 500;
+    letter-spacing: -.03em;
+    margin: 0;
+    overflow: hidden;
+}
+
+.conteudo .line {
+    margin: 20px 0 0 0 !important;
+    margin-left: 0 !important;
+}
+
+.up-margin {
+    max-width: 100% !important;
+    margin: 30px 0 0 0 !important;
+}
+
+section.section-portfolio {
+    height: 1000px;
+    background: #0C2134;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(#0c2134b0, #0c2134e0), url(../images/back.jpg);
+    position: relative;
+}
+
+section.section-portfolio:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    -webkit-clip-path: polygon(0 0%, 100% 0, 0% 100%, 0 0%);
+    clip-path: polygon(0 0%, 100% 0, 0% 100%, 0 0%);
+    background: #FAFAFA;
 }
 
 @media only screen and (max-width: 910px) {
@@ -388,12 +499,12 @@ section.home h3 {
 }
 
 @media only screen and (max-width: 580px) {
-    section.home h1 {
+    section.section-home h1 {
         font-size: 3em;
         width: 80%;
     }
 
-    section.home h3, .line {
+    section.section-home h3, .line {
         margin-left: 10%;
     }
 
@@ -419,5 +530,29 @@ section.home h3 {
 
     .hambuguer-menu {
         padding-top: 35px;
+    }
+
+    section.section-servicos .container-exp {
+        width: calc(100% - 50px);
+        margin-left: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    section.section-servicos .container-exp  {
+        margin-left: calc(50% - 25px);
+    }
+
+    .container-servicos .conteudo {
+        margin: auto 50px;
+    }
+
+    .container-servicos img {
+        display: none;
+    }
+
+    .container-servicos {
+        height: auto;
+        margin-top: 20px;
     }
 }
