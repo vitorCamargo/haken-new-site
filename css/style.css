@@ -878,7 +878,8 @@ section.section-sobreNos .container-equipe .container {
 }
 
 .social-icons img {
-    height: 35px;
+    height: 14px;
+    padding: 7px 7px 2px 7px;
 }
 
 .items li .social-icons {
@@ -951,13 +952,18 @@ section.section-sobreNos .container-equipe .container {
 }
 
 .social-icons a:first-child {
-    margin-left: auto;
+    margin-left: auto !important;
     margin-right: 5px;
 }
 
 .social-icons a:last-child {
     margin-left: 5px;
-    margin-right: auto;
+    margin-right: auto !important;
+}
+
+.social-icons a {
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
 }
 
 .grid--hidden {
