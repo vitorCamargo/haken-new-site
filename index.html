@@ -18,6 +18,7 @@
 
 		<link rel = "stylesheet" href = "css/style.css">
 		<link rel = "stylesheet" href = "css/pace-theme-minimal.css">
+		<link rel = "stylesheet" href = "css/sss.css">
 	</head>
 
 	<body id = "body">
@@ -165,7 +166,12 @@
 		<section id = "portfolio" class = "section-portfolio">
 			<div class = "container">
 				<div class = "container-exp">
-					<h4 class = "marquee"> Projetos desenvolvidos com <span class = "love">❤</span> </h4>
+					<h4 class = "marquee">
+						<span class = "hover-off">Projetos desenvolvidos</span>
+						<span class = "hover-on">Filhos criados</span>
+						com <span class = "love">❤</span>
+					</h4>
+					
 					<h2> Nosso Portfólio </h2>
 				</div>
 				<div class = "container-exp desc">
@@ -175,17 +181,123 @@
 			</div>
 
 			<div class = "container-portfolio">
-				Desculpe :( No momento estamos atualizando o site para que possamos mostrar todas as etapas de desenvolvimento de cada projeto. Estaremos logo de volta.
+				<div class = "grid grid--type-a" id = "projetos">
+					<div class = "grid__sizer"></div>
+
+					<div class = "grid__item">
+						<a href = "#" target = "_blank" class = "descricao"> 
+							<p> &#x1F596; &#128104;&#8205;&#128187; Site Oficial da Haken. </p>
+							<div class = "link">
+								hakenej.com <span> <img src = "images/goto.svg" /> </span>
+							</div>
+						</a>
+						<img class = "grid__img" src = "images/projetos/site-haken.jpg" alt = "Site Oficial Haken" />
+					</div>
+
+					<div class = "grid__item">
+						<a href = "http://ejotimiza.com.br" target = "_blank" class = "descricao"> 
+							<p> &#x1F493; &#x1F4AF; Site Oficial da Empresa Júnior Otimiza. </p>
+							<div class = "link">
+								ejotimiza.com.br <span> <img src = "images/goto.svg" /> </span>
+							</div>
+						</a>
+						<img class = "grid__img" src = "images/projetos/site-otimiza.jpg" alt = "Site EJ Otimiza" />
+					</div>
+
+					<div class = "grid__item">
+						<a href = "http://www.sanguebom.net.br/" target = "_blank" class = "descricao"> 
+							<p> &#x1F49E; &#x1F44D; Plataforma Sangue Bom. </p>
+							<div class = "link">
+								sanguebom.net.br <span> <img src = "images/goto.svg" /> </span>
+							</div>
+						</a>
+						<img class = "grid__img" src = "images/projetos/sistema-sangueBom.jpg" alt = "Plataforma Sangue Bom" />
+					</div>
+
+					<div class = "grid__item">
+						<a href = "http://libertosporele.com.br" target = "_blank" class = "descricao"> 
+							<p> &#x1F604; &#x1F91D; Consultoria realizada para o site Libertos por Ele. </p>
+							<div class = "link">
+								libertosporele.com.br <span> <img src = "images/goto.svg" /> </span>
+							</div>
+						</a>
+						<img class = "grid__img" src = "images/projetos/consultoria-LibertosPorEle.jpg" alt = "Consultoria Libertos por Ele" />
+					</div>
+
+					<div class = "grid__item">
+						<a href = "http://www.porticosej.com.br" target = "_blank" class = "descricao"> 
+							<p> &#x1F929; &#x1F44F; Site da Empresa Júnior Pórticos. </p>
+							<div class = "link">
+								porticosej.com.br <span> <img src = "images/goto.svg" /> </span>
+							</div>
+						</a>
+						<img class = "grid__img" src = "images/projetos/site-porticos.jpg" alt = "Site EJ Pórticos" />
+					</div>
+
+					<div class = "grid__item">
+						<a href = "" target = "_blank" class = "descricao"> 
+							<p> &#x1F4F1; &#x1F48E; Aplicativo que gerencia salas e laboratórios para UTFPR. </p>
+						</a>
+						<img class = "grid__img" src = "images/projetos/aplicativo-salas.jpg" alt = "Aplicativo Gerenciador de Salas" />
+					</div>
+
+					<div class = "grid__item">
+						<a href = "http://caec-utfprcm.com.br" target = "_blank" class = "descricao"> 
+							<p> &#x1F60E; &#x1F63B; Site do Centro Acadêmico de Engenharia Civíl. </p>
+							<div class = "link">
+								caec-utfprcm.com.br <span> <img src = "images/goto.svg" /> </span>
+							</div>
+						</a>
+						<img class = "grid__img" src = "images/projetos/site-caEngCivil.jpg" alt = "Centro Acadêmico de Engenharia Civíl" />
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section id = "sobreNos" class = "section-sobreNos">
-			Área para Sobre Nós
+			<div class = "container">
+				<div class = "container-exp">
+					<h4 class = "marquee"> Conheça nossa empresa, <i>nossa família</i>. </h4>
+					
+					<h2> Sobre Nós </h2>
+				</div>
+				<div class = "container-exp desc">
+					<div class = "line"></div>
+				</div>
+			</div>
+
+			<div class = "container-sobreEmpresa">
+				<div class = "slider">
+					<img src = "images/slide/equipe-haken.jpg" />
+					<img src = "images/sistemas-web.jpg" />
+				</div>
+				
+				<p>
+					Somos uma empresa formada e gerida por alunos do Bacharelado em Ciência da Computação, da Universidade Tecnológica Federal do Paraná, campus de Campo Mourão. Visamos acima de tudo o crescimento profissional de nossos membros e qualidade nos projetos realizados. Nossos desenvolvedores são capacitados para criar projetos nas mais diversas tecnologias atuais, garantindo a satisfação dos clientes. Contamos com o apoio do professor orientador, que está sempre em busca de cursos e aperfeiçoamento para os membros.
+				</p>
+			</div>
 		</section>
 
 		<script src = "js/textRotation.js"></script>
 		<!-- <script src = "js/parallax.js"></script> -->
 		<script src = "js/hamburguer-menu.js"></script>
 		<script src = "js/pace.min.js"></script>
+
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src = "js/sss.min.js"></script>
+		<script src = "js/imagesloaded.pkgd.min.js"></script>
+		<script src = "js/masonry.pkgd.min.js"></script>
+		<script src = "js/anime.min.js"></script>
+		<script src = "js/main.js"></script>
+
+		<script>
+			$('.slider').sss({
+				slideShow : true,
+				startOn : 0,
+				transition : 400,
+				speed : 3000,
+				showNav : true
+			});
+		</script>
 	</body>
 </html>

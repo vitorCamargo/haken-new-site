@@ -1,0 +1,15 @@
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Triangle 1 + Oval 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Final-Copy-5" sketch:type="MSArtboardGroup" transform="translate(-669.000000, -3814.000000)" stroke="#FFFFFF">
+            <g id="LEARN-MORE-Copy-+-Triangle-1-+-Oval-1-Copy-+-Line-Copy-Copy-Copy" sketch:type="MSLayerGroup" transform="translate(560.000000, 3813.000000)">
+                <g id="Triangle-1-+-Oval-1-Copy" transform="translate(110.000000, 2.000000)" sketch:type="MSShapeGroup">
+                    <path d="M6,5.5 C7.33333333,6.34645648 10,8.03936945 10,8.03936945 L6.12402905,10.5" id="Triangle-1"></path>
+                    <circle id="Oval-1" cx="8" cy="8" r="8"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
