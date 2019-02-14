@@ -583,7 +583,6 @@ section.section-portfolio .marquee:hover .hover-off, .hover-on {
     position: absolute;
 }
 
-
 .grid__item:hover .descricao {
     opacity: 1;
 }
@@ -693,6 +692,42 @@ section.section-sobreNos .container-equipe .container {
 .container-equipe h2 {
     text-align: left !important;
     font-size: 3em;
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.font-logo {
+    font-family: 'Maven Pro', sans-serif;
+    color: #0C2134;
+}
+
+.font-logo h3 {
+    font-size: 19px;
+}
+
+.gm-style-iw.gm-style-iw-c {
+    padding-top: 0;
+}
+
+.gm-style-iw.gm-style-iw-c button {
+    top: 0 !important;
+    right: 0 !important;
+}
+
+section.section-contato .container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+}
+
+section.section-contato .marquee, section.section-contato h2, section.section-contato .desc .line {
+    text-align: left !important;
+    margin-left: 0% !important;
 }
 
 @media only screen and (max-width: 910px) {
