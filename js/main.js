@@ -1,4 +1,4 @@
-var aux = 0;
+var aux = 0, auxRound = 0;
 ;(function(window) {
 	function GridLoaderFx(el, options) {
 		this.el = el;
@@ -171,9 +171,18 @@ var aux = 0;
 			var distanceToTop = someDiv.getBoundingClientRect().top;
 			var heightDiv = someDiv.offsetHeight;
 		 
-			if((distanceToTop <= 400 && distanceToTop >= (0 - heightDiv)) && aux == 0)
+			if((distanceToTop <= 300 && distanceToTop >= (0 - heightDiv)) && aux == 0)
 				applyFx();
-		 });
+		});
+
+		window.addEventListener('scroll', function(ev) {
+			var someDiv = document.getElementById('estatisticas');
+			var distanceToTop = someDiv.getBoundingClientRect().top;
+			var heightDiv = someDiv.offsetHeight;
+		 
+			if((distanceToTop <= 300 && distanceToTop >= (0 - heightDiv)) && auxRound == 0)
+				applyEffects();
+		});
 	}
 
 	function switchGrid() {
@@ -199,6 +208,38 @@ var aux = 0;
 
 			loaders[currentGrid]._render('Shu');
 		}, 500);
+	}
+
+	function applyEffects() {
+		auxRound = 1;
+
+		anime({
+			targets: document.querySelector('.linhas'),
+			innerHTML: [0, 203576],
+			easing: 'linear',
+			round: 10
+		});
+
+		anime({
+			targets: document.querySelector('.anos'),
+			innerHTML: [0, 6],
+			easing: 'linear',
+			round: 10
+		});
+
+		anime({
+			targets: document.querySelector('.membros'),
+			innerHTML: [0, 12],
+			easing: 'linear',
+			round: 10
+		});
+
+		anime({
+			targets: document.querySelector('.cafes'),
+			innerHTML: [0, 137],
+			easing: 'linear',
+			round: 10
+		});
 	}
 
 	init();
