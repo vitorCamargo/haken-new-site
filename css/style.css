@@ -615,9 +615,9 @@ section.section-sobreNos .container-exp.desc .line {
     margin: 25px auto 0 auto;
 }
 
-.container-sobreEmpresa, .container-estatisticas {
+.container-sobreEmpresa, .container-estatisticas, .container-equipe {
     color: #0C2134;
-    margin-top: 50px !important;
+    margin-top: 80px !important;
     display: flex;
     width: 100%;
     max-width: 1024px;
@@ -675,6 +675,24 @@ section.section-sobreNos .container-exp.desc .line {
     font-size: 20px;
     margin-left: -15px;
     font-weight: 700;
+}
+
+.container-equipe {
+    padding: 0 20px;
+    display: block;
+}
+
+section.section-sobreNos .container-equipe .container {
+    margin-bottom: 0 !important;
+}
+
+.container-equipe .line {
+    margin: 25px 0 0 0 !important;
+}
+
+.container-equipe h2 {
+    text-align: left !important;
+    font-size: 3em;
 }
 
 @media only screen and (max-width: 910px) {
@@ -804,6 +822,7 @@ section.section-sobreNos .container-exp.desc .line {
     }
 }
 
+
 .items {
     padding: 0;
     text-align: center;
@@ -811,6 +830,7 @@ section.section-sobreNos .container-exp.desc .line {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    margin-top: 8px;
 }
 
 .items::-webkit-scrollbar {
@@ -827,12 +847,18 @@ section.section-sobreNos .container-exp.desc .line {
     margin-bottom: 50px;
     display: inline-block;
     list-style: none;
-    width: 250px;
-    height: 150px;
+    width: 204px;
+    height: 308px;
     background-color: black;
     transition-duration: .5s;
     overflow: hidden;
     cursor: pointer;
+}
+
+.items-membros, .items-diretoria {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .items li:first-child {
@@ -850,22 +876,43 @@ section.section-sobreNos .container-exp.desc .line {
     background-size: cover;
     background-position: center top;
 }
+
+.social-icons img {
+    height: 35px;
+}
+
+.items li .social-icons {
+    opacity: 0;
+    transform: translateY(-100%) translateX(0%);
+    transition-duration: 1s;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+    background: linear-gradient(#0C2134BF, transparent);
+}
 		
 .items li:hover {
     transition-delay: .5s;
-    width: 400px;
+    width: 270px;
     margin-top: 0;
     margin-bottom: 0;
-    height: 250px;
+    height: 408px;
 }
 
-.items li:hover a .content {
+.items li:hover .social-icons {
+    transform: translateY(0) translateX(0%);
+    transition-delay: .75s;
+    opacity: 1;
+}
+
+.items li:hover .content {
     transform: translateY(0) translateX(-50%);
     transition-delay: .75s;
     opacity: 1;
 }
 		
-.items li a {
+.items li .content {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -877,7 +924,7 @@ section.section-sobreNos .container-exp.desc .line {
 }
 			
 .items li .content {
-    background: linear-gradient(transparent, rgba(0, 0, 0, .75));
+    background: linear-gradient(transparent, #0C2134BF);
     width: 100%;
     height: 100px;
     position: absolute;
@@ -901,6 +948,16 @@ section.section-sobreNos .container-exp.desc .line {
 	z-index: 2;
 	display: block;
 	margin: 0 auto;
+}
+
+.social-icons a:first-child {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.social-icons a:last-child {
+    margin-left: 5px;
+    margin-right: auto;
 }
 
 .grid--hidden {

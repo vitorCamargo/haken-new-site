@@ -235,7 +235,7 @@
 					</div>
 
 					<div class = "grid__item">
-						<a href = "" target = "_blank" class = "descricao"> 
+						<a target = "_blank" class = "descricao"> 
 							<p> &#x1F4F1; &#x1F48E; Aplicativo que gerencia salas e laboratórios para UTFPR. </p>
 						</a>
 						<img class = "grid__img" src = "images/projetos/aplicativo-salas.jpg" alt = "Aplicativo Gerenciador de Salas" />
@@ -304,13 +304,129 @@
 			<div class = "container-sobreEmpresa">
 				<div class = "slider">
 					<img src = "images/slide/equipe-haken.jpg" />
-					<img src = "images/sistemas-web.jpg" />
+					<img src = "images/slide/mascote.jpg" />
 				</div>
 				
 				<p>
 					Somos uma empresa formada e gerida por alunos do Bacharelado em Ciência da Computação, da Universidade Tecnológica Federal do Paraná, campus de Campo Mourão. Visamos acima de tudo o crescimento profissional de nossos membros e qualidade nos projetos realizados. Nossos desenvolvedores são capacitados para criar projetos nas mais diversas tecnologias atuais, garantindo a satisfação dos clientes. Contamos com o apoio do professor orientador, que está sempre em busca de cursos e aperfeiçoamento para os membros.
 				</p>
 			</div>
+
+			<div class = "container-equipe">
+				<div class = "container">
+					<div class = "container-exp">
+					<div class = "container-exp desc">
+						<div class = "line"></div>
+					</div>
+						<h2> Equipe </h2>
+					</div>
+				</div>
+			</div>
+
+			<ul class = "items">
+				<li class = "diretoria">
+					<div class = "bg-img" style = "background-image: url('./images/equipe/thaisZorawski.jpg');"></div>
+					<a>
+						<div class = "content">
+							<h2> Thais Zorawski </h2>
+							<small> PRESIDENTE </small>
+						</div>
+					</a>
+				</li>
+				
+				<div class = "items-diretoria">
+					<li class = "diretoria">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/eduardoBarbosa.jpg');"></div>
+						<a>
+							<div class = "content">
+								<h2> Eduardo Barbosa </h2>
+								<small> VICE-PRESIDENTE & DIRETOR DE R.H </small>
+							</div>
+						</a>
+					</li>
+					
+					<li class = "diretoria">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/lucasSantana.jpg');"></div>
+						<a>
+							<div class = "content">
+								<h2> Lucas Santana </h2>
+								<small> DIRETOR ADMINSTRADOR-FINANCEIRO </small>
+							</div>
+						</a>
+					</li>
+
+					<li class = "diretoria">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/vitorBueno.jpg');"></div>
+						<div class = "social-icons">
+							<a target = "_blank" href = "https://twitter.com/KristianIndy">
+								<img src="https://highalpha.com/wp-content/themes/highalpha-theme-2016/assets/images/icons/svg/twitter-white.svg">
+							</a>
+							<a target = "_blank" href = "https://www.linkedin.com/in/kandersen1">
+								<img src="https://highalpha.com/wp-content/themes/highalpha-theme-2016/assets/images/icons/svg/linkedin-white.svg">
+							</a>
+						</div>
+
+						<div class = "content">
+							<h2> Vitor Bueno </h2>
+							<small> DIRETOR DE PROJETOS </small>
+						</div>
+					</li>
+					
+					<li class = "diretoria">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/lucasRibeiro.jpg');"></div>
+						<div class = "content">
+							<h2> Lucas Ribeiro </h2>
+							<small> DIRETOR DE MARKETING </small>
+						</div>
+					</li>
+				</div>
+				
+				<div class = "items-membros">
+					<li class = "membros">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/alissonVieira.jpg');"></div>
+						<div class = "content">
+							<h2> Alisson Vieira </h2>
+						</div>
+					</li>
+					
+					<li class = "membros">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/evertonAbreu.jpg');"></div>
+						<div class = "content">
+							<h2> Everton Abreu </h2>
+						</div>
+					</li>
+					
+					<li class = "membros">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/gabrielDavid.jpg');"></div>
+						<div class = "content">
+							<h2> Gabriel David </h2>
+						</div>
+					</li>
+					
+					<li class = "membros">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/luizHenrique.jpg');"></div>
+						<div class = "content">
+							<h2> Luiz Henrique </h2>
+						</div>
+					</li>
+					
+					<li class = "membros">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/mariaFernanda.jpg');"></div>
+						<div class = "content">
+							<h2> Maria Fernanda </h2>
+						</div>
+					</li>
+					
+					<li class = "membros">
+						<div class = "bg-img" style = "background-image: url('./images/equipe/vitorCimetan.jpg');"></div>
+						<a>
+							<div class = "content">
+								<h2> Vitor Cimentan </h2>
+							</div>
+						</a>
+					</li>
+				</div>
+			</ul>
 		</section>
 
 		<script src = "js/textRotation.js"></script>
@@ -333,6 +449,14 @@
 				speed : 3000,
 				showNav : true
 			});
+
+			$(".items-membros").html($(".items-membros .membros").sort(function() {
+				return Math.random()-0.5;
+			}));
+
+			$(".items-diretoria").html($(".items-diretoria .diretoria").sort(function() {
+				return Math.random()-0.5;
+			}));
 		</script>
 	</body>
 </html>
