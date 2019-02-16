@@ -2,7 +2,7 @@
 
 body, html {
     font-family: 'Maven Pro', sans-serif;
-    background: #FAFAFA;
+    background: #FFFFFF;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
@@ -112,7 +112,7 @@ header.hamburguer-expanded nav:first-child li {
 
 header nav .menu-high-alpha-menu-container::after {
     clear: both;
-    content: "";
+    content: '';
     display: table;
 }
 
@@ -325,7 +325,7 @@ section.section-home {
 }
 
 section.section-home:before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     display: block;
@@ -333,7 +333,7 @@ section.section-home:before {
     height: 200px;
     -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
-    background: #FAFAFA;
+    background: #FFFFFF;
 }
 
 section.section-home .slogan {
@@ -476,14 +476,14 @@ section.section-portfolio {
 }
 
 section.section-portfolio:before {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     width: 100%;
     height: 200px;
     -webkit-clip-path: polygon(0 0%, 100% 0, 0% 100%, 0 0%);
     clip-path: polygon(0 0%, 100% 0, 0% 100%, 0 0%);
-    background: #FAFAFA;
+    background: #FFFFFF;
 }
 
 section.section-portfolio .container {
@@ -588,7 +588,7 @@ section.section-portfolio .marquee:hover .hover-off, .hover-on {
 }
 
 section.section-sobreNos {
-    padding: 100px 0;
+    padding: 100px 0 20px 0;
 }
 
 section.section-sobreNos .container {
@@ -697,7 +697,6 @@ section.section-sobreNos .container-equipe .container {
 #map {
     height: 250px;
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .font-logo {
@@ -718,16 +717,151 @@ section.section-sobreNos .container-equipe .container {
     right: 0 !important;
 }
 
-section.section-contato .container {
+section.section-contato .container, .container-form {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    margin-bottom: 30px !important;
+    margin-bottom: 50px !important;
+    padding: 0 20px;
 }
 
 section.section-contato .marquee, section.section-contato h2, section.section-contato .desc .line {
     text-align: left !important;
     margin-left: 0% !important;
+}
+
+.contact-facebook, .contact-instagram, .contact-whatsapp, .contact-email {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin: 13px 0 0 15px;
+    cursor: pointer;
+}
+
+.contact-facebook img, .contact-instagram img, .contact-whatsapp img, .contact-email img {
+    width: 15px;
+    margin: auto;
+    margin-top: 7.5px;
+    display: block;
+}
+
+.contact-facebook {
+    background-color: #3b5998;
+}
+
+.contact-whatsapp {
+    background-color: #25D366
+}
+
+.contact-email {
+    background-color: #c71610;
+}
+
+.contact-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%,#fec564,transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%,#fec564,transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%,#5258cf,transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%,#5258cf,transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0,#893dc2,transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%,#893dc2,transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%,#d9317a,transparent),
+        linear-gradient(#6559ca,#bc318f 30%,#e33f5f 50%,#f77638 70%,#fec66d 100%);
+}
+
+.container-form {
+    margin-top: 50px;
+}
+
+.container-form form {
+    width: calc(65% - 40px);
+    margin: 0 auto;
+}
+
+.form-control-label {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.4em;
+    margin-left: 2px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    margin: 5px 0;
+    width: calc(100% - 30px);
+    outline: none;
+    border: 1px solid #E7E7E7;
+    padding: 15px;
+    -webkit-transition: all, 0.2s ease-out;
+    -moz-transition: all, 0.2s ease-out;
+    transition: all, 0.2s ease-out;
+    font-family: 'Maven Pro', sans-serif;
+    color: #333;
+    font-size: 15px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.btn-primary {
+    text-transform: uppercase;
+    padding: 10px 30px !important;
+    font-weight: 100;
+    background: none;
+    width: auto;
+    border: 2px solid #0C2134;
+    color: #0C2134;
+    height: auto;
+    text-align: center;
+    min-width: 150px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 2px #0C21346E;
+    border: 1px solid #fff;
+}
+
+.invalid-feedback {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.red {
+    color: red;
+}
+
+footer {
+    border-top: 1px solid #F7F7F7;
+    padding: 40px 0;
+}
+
+footer .container {
+    color: #0C2134;
+    width: calc(100% - 40px);
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .texts {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+footer p {
+    margin: 0;
 }
 
 @media only screen and (max-width: 910px) {
@@ -832,6 +966,15 @@ section.section-contato .marquee, section.section-contato h2, section.section-co
         width: calc(100% - 40px);
         text-align: center;
     }
+
+    .contact-facebook, .contact-instagram, .contact-whatsapp, .contact-email {
+        margin: 13px 0 0 10px;
+    }
+    
+    .container-form form {
+        width: calc(100% - 40px);
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -856,7 +999,6 @@ section.section-contato .marquee, section.section-contato h2, section.section-co
         margin-top: 20px;
     }
 }
-
 
 .items {
     padding: 0;
